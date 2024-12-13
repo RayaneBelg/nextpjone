@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+/* Buttons */
+.btn-primary {
+  @apply bg-rosa-pink text-soft-beige px-4 py-2 rounded-md hover:bg-accent-yellow transition;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.btn-secondary {
+  @apply bg-dark-blue text-soft-beige px-4 py-2 rounded-md hover:bg-accent-yellow transition;
+}
+
+/* Cards */
+.card {
+  @apply bg-soft-beige rounded-md shadow-lg p-4;
+}
+
+/* Section Containers */
+.section {
+  @apply p-8 bg-gradient-card rounded-md;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }

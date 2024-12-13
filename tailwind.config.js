@@ -8,10 +8,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // Custom brand colors
+        "rosa-pink": "#FF69B4",  // Replace with your exact shade
+        "soft-beige": "#F5F5DC", // Soft beige for backgrounds
+        "dark-blue": "#1B263B",  // A rich, dark blue
+        "accent-yellow": "#FFD700", // Accent for highlights
+      },
+
+      fontFamily: {
+        westmeath: ["var(--font-west)"], // Matches the variable from localFont
+      },
+      backgroundImage: {
+        // Gradients
+        "gradient-header": "linear-gradient(to right, #810000, #F5F5DC)", // From rosa-pink to yellow
+        "gradient-card": "linear-gradient(to bottom, #810000, #F5F5DC)", // From dark-blue to soft-beige
       },
     },
   },
   plugins: [],
 };
+
