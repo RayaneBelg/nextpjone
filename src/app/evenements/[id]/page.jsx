@@ -4,7 +4,7 @@ import { articles } from '../../assets/data';
 export default function ArticlePage({ params }) {
 
 const {id} = params;
-const article = articles.find((art) => art.id.toString() === id);
+
   return (
     <div className="solo-article">
       <h1 className="font-westmeath uppercase text-4xl">{article.titre}</h1>
