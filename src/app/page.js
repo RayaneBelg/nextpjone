@@ -4,7 +4,7 @@ import Formules from "./Components/Formules";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-card ">
+    <div className="">
     <Hero/>
     <Formules/>
   

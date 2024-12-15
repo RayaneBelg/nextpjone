@@ -53,4 +53,60 @@ const menu = [
     }
   ];
   
-  
+ export const articles = [
+    {
+      id: 1,
+      categorie: "Nouveautés",
+      titre: "Ouverture de notre nouvelle terrasse",
+      sousTitre: "Un espace chaleureux pour vos repas en plein air",
+      contenu: "Nous sommes ravis de vous annoncer l'ouverture de notre toute nouvelle terrasse. Située à l'arrière du restaurant, cette terrasse offre un espace convivial et verdoyant pour vos repas en famille ou entre amis. Venez profiter d'une expérience unique en plein air, tout en savourant nos délicieuses spécialités.",
+      datePublication: "2024-12-10",
+      auteur: "L'équipe du restaurant",
+      image: "terrasse-ouverture.jpg",
+      tags: ["terrasse", "nouveautés", "expérience plein air"]
+    },
+    {
+      id: 2,
+      categorie: "Recettes",
+      titre: "La recette de notre tarte tatin maison",
+      sousTitre: "Un dessert classique pour régaler vos proches",
+      contenu: "Vous nous l'avez demandé, et la voici ! Notre fameuse recette de tarte tatin maison est enfin disponible. Avec ses pommes caramélisées et sa pâte croustillante, ce dessert fera sensation à votre table. Suivez nos instructions simples pour réussir cette douceur emblématique.",
+      datePublication: "2024-11-25",
+      auteur: "Chef Marie",
+      image: "recette-tarte-tatin.jpg",
+      tags: ["recettes", "desserts", "tarte tatin"]
+    },
+    {
+      id: 3,
+      categorie: "Événements",
+      titre: "Soirée thématique : cuisine italienne",
+      sousTitre: "Voyagez en Italie sans quitter votre ville",
+      contenu: "Rejoignez-nous pour une soirée inoubliable autour de la cuisine italienne. Au menu : antipasti, pizzas authentiques, pasta et tiramisu maison. L'ambiance sera assurée par des musiques italiennes et une décoration immersive. Pensez à réserver votre table pour ce voyage culinaire exceptionnel !",
+      datePublication: "2024-12-01",
+      auteur: "L'équipe du restaurant",
+      image: "soiree-italienne.jpg",
+      tags: ["événements", "cuisine italienne", "soirées thématiques"]
+    },
+    {
+      id: 4,
+      categorie: "Conseils",
+      titre: "Comment choisir un bon vin pour accompagner vos repas",
+      sousTitre: "Les astuces d'un sommelier pour sublimer vos plats",
+      contenu: "Le choix du vin peut transformer un repas ordinaire en une véritable expérience gastronomique. Dans cet article, notre sommelier partage ses astuces pour marier les saveurs de vos plats avec le vin parfait. Que vous préfériez le rouge, le blanc ou le rosé, suivez nos conseils pour impressionner vos convives.",
+      datePublication: "2024-12-05",
+      auteur: "Sommelier Julien",
+      image: "choisir-bon-vin.jpg",
+      tags: ["conseils", "vins", "accord mets et vins"]
+    },
+    {
+      id: 5,
+      categorie: "Partenariats",
+      titre: "Collaboration avec des producteurs locaux",
+      sousTitre: "Soutenir l'agriculture locale tout en garantissant la qualité",
+      contenu: "Nous sommes fiers de collaborer avec des producteurs locaux pour vous offrir des ingrédients frais et de saison. Dans cet article, découvrez nos partenaires et leur savoir-faire. En privilégiant les circuits courts, nous soutenons l'économie locale tout en respectant l'environnement.",
+      datePublication: "2024-11-20",
+      auteur: "L'équipe du restaurant",
+      image: "partenariats-locaux.jpg",
+      tags: ["partenariats", "local", "qualité"]
+    }
+  ];
