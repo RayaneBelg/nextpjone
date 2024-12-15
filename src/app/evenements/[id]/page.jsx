@@ -13,7 +13,7 @@ const article = articles.find((art) => art.id.toString() === id);
       <h2 className="text-xl font-bold">{article.sousTitre}</h2>
       <p>{article.contenu}</p>
       <p><strong>Author:</strong> {article.auteur}</p>
-      <p><strong>Published on:</strong> {article.datePublication}</p>
+      <p><strong>Published le:</strong> {article.datePublication}</p>
     </div>
   );
 }
