@@ -12,8 +12,8 @@ const article = articles.find((art) => art.id.toString() === id);
       <h1 className="font-westmeath uppercase text-4xl">{article.titre}</h1>
       <h2 className="text-xl font-bold">{article.sousTitre}</h2>
       <p>{article.contenu}</p>
-      <p><strong>Author:</strong> {article.auteur}</p>
-      <p><strong>Published le:</strong> {article.datePublication}</p>
+      <p><strong>Author</strong> {article.auteur}</p>
+      <p><strong>Published</strong> {article.datePublication}</p>
     </div>
   );
 }
