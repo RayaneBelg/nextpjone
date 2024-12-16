@@ -14,7 +14,7 @@ export default function Item({ infos }) {
         className="card cursor-pointer"
         onClick={() => setModalOpen(true)}
       >
-        <h1>{infos.nom}</h1>
+        <h1 className='font-westmeath uppercase text-xl lg:text-3xl text-center'>{infos.nom}</h1>
         <p>{infos.prix} €</p>
         <img src={infos.src} alt={infos.nom} />
       </motion.div>
@@ -32,10 +32,10 @@ export default function Item({ infos }) {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              className="bg-white p-6 rounded shadow-lg  overflow-y-auto sm:p-4 h-[70vh] w-[90%] md:w-1/2 flex flex-col items-center"
+              className="bg-white p-6 rounded shadow-lg  overflow-y-auto sm:p-4  w-[90%] md:w-1/2 flex flex-col items-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <h2 className="text-xl font-bold mb-4">{infos.nom}</h2>
+              <h2 className="font-westmeath uppercase text-4xl text-center">{infos.nom}</h2>
               <p className='text-justify'>{infos.description}</p>
               <img src={infos.src} alt={infos.nom} className="mb-4 max-h-[30vh]" />
               <p className="text-gray-700">Prix: {infos.prix} €</p>

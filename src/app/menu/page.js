@@ -3,7 +3,7 @@ import GridMenu from '../Components/GridMenu'
 
 export default function page() {
   return (
-    <div>
+    <div className='min-h-dvh'>
       <GridMenu/>
     </div>
   )

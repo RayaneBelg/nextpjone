@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 
 const westmeath = localFont({
@@ -16,13 +17,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${westmeath.variable}`}>
         <body
-        className="p-0"
+        className="p-0 bg-gradient-body overflow-x-hidden"
       >
       <Header/>
      
     
         {children}
+        <Footer/>
       </body>
+     
     </html>
   );
 }
