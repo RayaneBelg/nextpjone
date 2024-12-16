@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div>
       <video
-        className="h-[50vh] w-full object-cover"
+        className="h-[20vh] md:h-[30vh] w-full object-cover object-bottom"
         src="../../head.mov"
         autoPlay
         loop

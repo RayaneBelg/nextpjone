@@ -4,10 +4,10 @@ import Formules from "./Components/Formules";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="min-h-dvh">
     <Hero/>
     <Formules/>
-    
+
   
     </div>
   );
