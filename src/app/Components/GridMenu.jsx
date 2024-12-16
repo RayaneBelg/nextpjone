@@ -14,7 +14,7 @@ export default function GridMenu() {
     : menu.filter(item => item.plat === filter);
 
   return (
-    <div className="border-2">
+    <div className="border-2  ">
       {/* Boutons de filtre */}
       <div className="flex space-x-4 p-4 justify-center flex-wrap gap-2  ">
         <button 
@@ -45,7 +45,7 @@ export default function GridMenu() {
       </div>
 
       {/* Grille des items */}
-      <div className="grid lg:grid-cols-6  md:grid-cols-3 grid-cols-2 gap-4 border-2 font-westmeath p-6 ">
+      <div className="grid lg:grid-cols-6  md:grid-cols-3 grid-cols-2 gap-4 border-2 font-westmeath p-24  ">
         {filteredMenu.map((item) => (
           <AnimatePresence key={item.id}>
 

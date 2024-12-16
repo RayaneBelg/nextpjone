@@ -18,11 +18,13 @@ module.exports = {
       fontFamily: {
         westmeath: ["var(--font-west)"], // Matches the variable from localFont
       },
+      
       backgroundImage: {
         // Gradients
-        "gradient-header": "linear-gradient(to right, #810000, #F5F5DC)", // From rosa-pink to yellow
+        "gradient-header": "radial-gradient(circle, rgba(247,247,247,1) 0%, rgba(185,28,28,1) 14%)", // From rosa-pink to yellow
         "gradient-card": "linear-gradient(to bottom, #810000, #F5F5DC)", // From dark-blue to soft-beige
        "gradient-body": "radial-gradient(circle, rgba(247,247,247,1) 47%, rgba(203,213,225,1) 100%)",
+      
       },
     },
   },
