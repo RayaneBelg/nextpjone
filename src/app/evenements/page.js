@@ -1,11 +1,18 @@
+'use client'
 import React from 'react'
 import Hero from '../Components/Hero'
 import { articles } from '../assets/data'
 import ArtCard from '../Components/ArtCard'
+import { motion} from "framer-motion";
 
 export default function page() {
   return (
-    <div className=''>
+    <motion.div 
+    initial ={{opacity : 0}}
+    animate ={{opacity : 1}}
+    transition={{delay : .8}}
+    
+    className=''>
      <Hero/>
      <div>
       <h1 className='text-4xl font-bold font-westmeath uppercase text-center'>Actualités</h1> 
@@ -24,6 +31,6 @@ export default function page() {
 
      </div>
 
-    </div>
+    </motion.div>
   )
 }

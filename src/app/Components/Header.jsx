@@ -1,43 +1,61 @@
-import React from 'react';
+'use client'
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 import Link from 'next/link';
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  // Detect scroll to toggle state
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='sticky top-0'>
-    
-    <div className="flex justify-between  items-center px-0 bg-red-700">
-      {/* First Div */}
-      <div className="  w-1/3 flex justify-start ">
-      
-       <AiFillTikTok  size={50}/>
-    
-    
+    <motion.div
+      className="sticky top-0 z-50 bg-red-700"
+      animate={{ height: scrolled ? '6vh' : '10vh' }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="flex justify-between items-center px-4 h-full">
+        {/* Left Section */}
+        <div className="w-1/3 flex justify-start">
+          <AiFillTikTok size={40} color="white" />
+        </div>
+
+        {/* Center Section */}
+        <div className="p-2 flex justify-center">
+          <Link href="/">
+            <img
+              className={`object-cover   ${scrolled ? 'h-[5vh]' : 'h-[10vh]'}`}
+              src={scrolled ? '../../iconeBlack.png' : '../../Rosablack.png'}
+              alt="Hero Banner"
+            />
+          </Link>
+        </div>
+
+        {/* Right Section */}
+        <div className="w-1/3 flex justify-end">
+          <FaInstagramSquare size={40} color="white" />
+        </div>
       </div>
 
-      {/* Middle Div */}
-      <div className=" p-2  flex justify-center">
-      <Link href="/"> 
-     <h1 className="text-4xl text-blackuppercase font-bold font-westmeath  p-2 outline-4 outline-double">Rosa</h1></Link> 
-      </div>
-
-      {/* Last Div */}
-      <div className=" w-1/3 flex justify-end">
-       <FaInstagramSquare  size={50}/>
-      </div>
-    </div>
-    <div className='bg-black'>
-    <ul className='flex uppercase gap-4 font-mono text-white justify-center '>
-        <Link href="/menu" > <li className=''>Carte</li></Link>
-          <Link href="/evenements" > <li>Actu</li></Link>
-          <Link href="/contact" > <li>Contact</li></Link>
+      {/* Navigation Bar */}
+      <div className="bg-black">
+        <ul className="flex  gap-4 justify-center ">
+          <Link href="/menu"><li  className='text-xl text-white font-mono uppercase '>Carte</li></Link>
+          <Link href="/evenements"><li className='text-xl text-white font-mono uppercase '>Actu</li></Link>
+          <Link href="/contact"><li className='text-xl text-white font-mono uppercase '>Contact</li></Link>
         </ul>
-
       </div>
-
-
-    </div>
+    </motion.div>
   );
 }
-  

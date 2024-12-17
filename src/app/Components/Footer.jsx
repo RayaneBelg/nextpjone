@@ -6,14 +6,15 @@ export default function Footer() {
     <div className=' w-full  '>
 
 <div className="flex justify-center items-end p-4 bg-black ">
+     
      <Link href="/"> 
-     <h1 className="text-4xl text-white uppercase font-bold font-westmeath  p-4 outline-4 outline-double">Rosa</h1></Link> 
+      <img
+        className=" h-[10vh] object-cover "
+        src="../../RosaWhite.png"
+        alt="Hero Banner"
+      /></Link> 
       </div>
-      <div className='bg-red-700'>
-        x
-
-      </div>
-
+    
     
       
     </div>

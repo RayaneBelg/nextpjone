@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import Loader from "./Components/Loader";
+import PageTransition from "./Components/PageTransition";
 
 
 const westmeath = localFont({
@@ -20,6 +22,8 @@ export default function RootLayout({ children }) {
         className="p-0 bg-gradient-body overflow-x-hidden "
       >
       <Header/>
+      <PageTransition/>
+      <Loader/>
      
     
         {children}

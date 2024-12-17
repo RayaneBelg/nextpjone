@@ -19,6 +19,7 @@ module.exports = {
         westmeath: ["var(--font-west)"], // Matches the variable from localFont
       },
       
+      
       backgroundImage: {
         // Gradients
         "gradient-header": "radial-gradient(circle, rgba(247,247,247,1) 0%, rgba(185,28,28,1) 14%)", // From rosa-pink to yellow
