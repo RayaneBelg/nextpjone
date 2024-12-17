@@ -3,7 +3,20 @@ import { offers } from '../assets/data';
 
 export default function Offres() {
   return (
-    <div className='flex-col flex min-h-[70dvh]'>
+    <div className='flex-col flex min-h-dvh snap-start  p-0'>
+        
+      <video
+        className="h-[30vh] md:h-[35vh] w-full object-cover object-bottom"
+        src="../../head.mov"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        Your browser does not support the video tag.
+      </video>
+   
+
           <h1 className='font-westmeath uppercase text-2xl sm:text-5xl text-center mt-8'>Formules</h1>
         <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 p-4'>
         {offers.map((off, id) => (
