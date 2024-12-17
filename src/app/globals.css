@@ -16,7 +16,7 @@
 
 /* Cards */
 .card {
-  @apply  outline-4 outline-double shadow-lg  border-black;
+  @apply  outline-4 outline-double shadow-md shadow-black border-black;
 }
 
 /* Section Containers */
