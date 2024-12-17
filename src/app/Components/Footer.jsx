@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <div className=' w-full  '>
+    <div className=' flex justify-center items-center bg-black p-1 fixed bottom-0 w-full'>
 
-<div className="flex justify-center items-center bg-black p-1 fixed bottom-0 w-full">
+<div className="">
      
      <Link href="/"> 
       <img

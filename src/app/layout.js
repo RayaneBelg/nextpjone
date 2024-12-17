@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${westmeath.variable}`}>
         <body
-        className="p-0 bg-gradient-body overflow-x-hidden "
+        className="p-0 bg-gradient-body  "
       >
       <Header/>
       <PageTransition/>
