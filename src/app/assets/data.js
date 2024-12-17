@@ -21,7 +21,7 @@ const menu = [
   export const offers = [
     {
       id: 1,
-      nom: "Formule Petit-Déjeuner",
+      nom: "Petit-Déjeuner",
       description: "Un petit-déjeuner complet pour bien commencer la journée : croissant ou pain au chocolat, boisson chaude au choix et un jus d'orange pressé.",
       prix: 7.5,
       disponibilite: "Matin uniquement",
@@ -30,7 +30,7 @@ const menu = [
     },
     {
       id: 2,
-      nom: "Formule Goûter Gourmand",
+      nom: "Goûter Gourmand",
       description: "Une pause gourmande pour l'après-midi : une part de tarte maison, un cookie ou une madeleine, accompagné d'une boisson chaude ou d'un jus de fruits.",
       prix: 6.0,
       disponibilite: "Après-midi uniquement",
@@ -38,7 +38,7 @@ const menu = [
     },
     {
       id: 3,
-      nom: "Formule Midi",
+      nom: "Midi",
       description: "Un repas équilibré pour le déjeuner : plat du jour au choix, une boisson et un dessert maison pour finir en beauté.",
       prix: 15.0,
       disponibilite: "Midi uniquement",
@@ -46,7 +46,7 @@ const menu = [
     },
     {
       id: 4,
-      nom: "Formule Soir",
+      nom: " Soir",
       description: "Un dîner complet et raffiné : entrée, plat et dessert avec une boisson incluse pour une expérience gastronomique.",
       prix: 25.0,
       disponibilite: "Soir uniquement",

@@ -17,9 +17,9 @@ export default function Home() {
       
         <BannerCta />
       
-      <div className="snap-start h-dvh flex items-center justify-center overflow-y-hidden ">
+      
         <Offres/>
-      </div>
+      
 
 
     </div>
