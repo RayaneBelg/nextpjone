@@ -9,7 +9,7 @@ export default function Formules() {
         {offers.map((off, id) => (
           <div
             key={id}
-            className='card outline-red-700 snap-center flex-shrink-0   bg-gray-100 p-4  shadow-md flex flex-col gap-2'
+            className='card outline-red-700 snap-center flex-shrink-0 w-[80%] md:w-auto  bg-gray-100 p-4  shadow-md flex flex-col gap-6'
           >
             <h1 className='text-xl font-bold font-westmeath uppercase text-center'>{off.nom}</h1>
             
