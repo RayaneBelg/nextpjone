@@ -52,14 +52,7 @@ const menu = [
       disponibilite: "Soir uniquement",
       inclus: [["Croissant", "Pain au chocolat", "Cookie , Muffin"] , ["jus de fruit au choix"] , ["café ou thé"]]
     },
-    {
-      id: 4,
-      nom: "Formule Burger",
-      description: "Un dîner complet et raffiné : entrée, plat et dessert avec une boisson incluse pour une expérience gastronomique.",
-      prix: 25.0,
-      disponibilite: "Soir uniquement",
-      inclus: [["Croissant", "Pain au chocolat", "Cookie , Muffin"] , ["jus de fruit au choix"] , ["café ou thé"]]
-    }
+  
   ];
   
  export const articles = [

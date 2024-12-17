@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function BannerCta() {
   return (
-    <div className=' bg-red-700 flex flex-col md:flex-row justify-center p-4'>
+    <div className='  flex flex-col md:flex-row justify-center p-4 h-[94dvh] bg-gradient-cta'>
         <div className='grid grid-cols-2 gap-1 px-4 mx-4'>
              <img
         className=" h-[20vh] w-[20vh] object-cover border-2 border-black"

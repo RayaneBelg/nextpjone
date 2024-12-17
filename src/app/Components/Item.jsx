@@ -9,7 +9,7 @@ export default function Item({ infos }) {
       <motion.div
         initial={{ x: 20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ delay: 1.6 + infos.id * 0.05 }}
+        transition={{ delay: infos.id * 0.05 }}
         whileHover={{scale : 1.05}}
         className="card cursor-pointer flex flex-col items-center"
         onClick={() => setModalOpen(true)}
