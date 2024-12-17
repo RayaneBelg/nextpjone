@@ -3,7 +3,7 @@ import { offers } from '../assets/data';
 
 export default function Formules() {
   return (
-    <div className='overflow-x-hidden min-h-[50vh]  flex flex-col justify-center'>
+    <div className='overflow-x-hidden min-h-[30vh]  flex flex-col justify-center'>
       <h1 className='font-westmeath uppercase text-4xl text-center my-6'>Nos formules</h1>
       <div className='flex justify-between overflow-x-auto snap-x snap-mandatory space-x-4 py-4 '>
         {offers.map((off, id) => (

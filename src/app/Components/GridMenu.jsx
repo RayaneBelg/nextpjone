@@ -45,7 +45,7 @@ export default function GridMenu() {
       </div>
 
       {/* Grille des items */}
-      <div className="grid lg:grid-cols-4  md:grid-cols-3 grid-cols-2 gap-4 border-2 font-westmeath p-24  ">
+      <div className="grid lg:grid-cols-4  md:grid-cols-3 grid-cols-2 gap-4 border-2 font-westmeath lg:p-24 p-4  ">
         {filteredMenu.map((item) => (
           <AnimatePresence key={item.id}>
 

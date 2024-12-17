@@ -9,6 +9,7 @@ export default function Home() {
     <Hero/>
     <Formules/>
     <BannerCta/>
+    <Formules/>
 
   
     </div>

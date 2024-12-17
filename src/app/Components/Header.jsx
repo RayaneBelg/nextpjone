@@ -35,7 +35,7 @@ export default function Header() {
         <div className="p-2 flex justify-center">
           <Link href="/">
             <img
-              className={`object-cover   ${scrolled ? 'h-[5vh]' : 'h-[10vh]'}`}
+              className={`   ${scrolled ? 'h-[5vh]' : 'h-[10vh]'}`}
               src={scrolled ? '../../iconeBlack.png' : '../../Rosablack.png'}
               alt="Hero Banner"
             />
