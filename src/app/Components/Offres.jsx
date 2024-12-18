@@ -40,13 +40,13 @@ export default function Offres() {
                   {off.inclus.map((item, idx) => (
                     <li
                       key={idx}
-                      className="text-xs font-bold sm:text-xl sm:uppercase text-gray-700"
+                      className="text-xs font-bold sm:text-md sm:uppercase text-gray-700"
                     >
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="text-sm sm:text-3xl mt-4 font-extrabold text-red-700">
+                <p className="text-sm sm:text-2xl mt-4 font-extrabold text-red-700">
                   {off.prix} €
                 </p>
               </div>
