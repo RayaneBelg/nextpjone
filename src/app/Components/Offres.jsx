@@ -11,7 +11,7 @@ export default function Offres() {
         {/* Video Section */}
         <div className="flex-shrink-0 w-full">
           <video
-            className="h-[27vh] md:h-[35vh] lg:h-[40vh] w-full object-cover object-bottom"
+            className="h-[25vh] md:h-[35vh] lg:h-[40vh] w-full object-cover object-bottom"
             src="../../head.mov"
             autoPlay
             loop
@@ -23,7 +23,7 @@ export default function Offres() {
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col justify-center items-center px-4 ">
+        <div className="flex flex-col justify-center items-center px-2 ">
           <h1 className="font-westmeath uppercase text-4xl sm:text-4xl lg:text-6xl   sm:my-6 my-2">
             Formules
           </h1>
@@ -31,7 +31,7 @@ export default function Offres() {
             {offers.map((off, id) => (
               <div
                 key={id}
-                className=" card p border border-gray-200 shadow-md rounded-lg text-center bg-white hover:shadow-lg transition-shadow"
+                className=" card  border border-gray-200 shadow-md rounded-lg text-center bg-white hover:shadow-lg transition-shadow"
               >
                 <h1 className="font-westmeath uppercase text-xl sm:text-4xl lg:text-5xl text-center my-2">
                   {off.nom}
