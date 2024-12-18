@@ -14,7 +14,7 @@ export default function GridMenu() {
     filter === "all" ? menu : menu.filter((item) => item.plat === filter);
 
   return (
-    <div className="flex flex-col h-dvh bg-white overflow-y-auto">
+    <div className="flex flex-col h-dvh overflow-y-auto">
       {/* Wrapper Div with Adjusted Height */}
       <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col mt-[13vh]">
         {/* Filter Buttons */}
@@ -40,7 +40,7 @@ export default function GridMenu() {
         </div>
 
         {/* Grid of Items */}
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 p-4 lg:p-12">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 p-4 lg:p-12 lg:gap-8 ">
           <AnimatePresence>
             {filteredMenu.map((item) => (
               <Item key={item.id} infos={item} />

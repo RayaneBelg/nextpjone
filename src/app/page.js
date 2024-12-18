@@ -3,6 +3,8 @@ import Hero from "./Components/Hero";
 import Formules from "./Components/Formules";
 import BannerCta from "./Components/BannerCta";
 import Offres from "./Components/Offres";
+import AboutCta from "./Components/AboutCta";
+import HarmonizedCta from "./Components/HarmonizedCta";
 
 export default function Home() {
   return (
@@ -15,10 +17,10 @@ export default function Home() {
    
 
       
-        <BannerCta />
+       <HarmonizedCta/>
       
       
-        <Offres/>
+        <AboutCta/>
       
 
 
