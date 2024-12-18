@@ -33,10 +33,10 @@ export default function Offres() {
                 key={id}
                 className=" card  border border-gray-200 shadow-md rounded-lg text-center bg-white hover:shadow-lg transition-shadow"
               >
-                <h1 className="font-westmeath uppercase text-xl sm:text-4xl lg:text-5xl text-center my-2">
+                <h1 className="font-westmeath uppercase text-xl sm:text-3xl  text-center my-2">
                   {off.nom}
                 </h1>
-                <ul className="mt space-y-3 sm:space-y-8  sm:my-16 font-mono">
+                <ul className="mt space-y-3 sm:space-y-4  sm:my-8 font-mono">
                   {off.inclus.map((item, idx) => (
                     <li
                       key={idx}
