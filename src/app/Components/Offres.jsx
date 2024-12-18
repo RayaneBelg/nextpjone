@@ -11,7 +11,7 @@ export default function Offres() {
         {/* Video Section */}
         <div className="flex-shrink-0 w-full">
           <video
-            className="h-[30vh] md:h-[35vh] lg:h-[40vh] w-full object-cover object-bottom"
+            className="h-[27vh] md:h-[35vh] lg:h-[40vh] w-full object-cover object-bottom"
             src="../../head.mov"
             autoPlay
             loop
