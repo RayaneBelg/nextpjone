@@ -24,29 +24,29 @@ export default function Offres() {
 
         {/* Content Section */}
         <div className="flex flex-col justify-center items-center px-4 ">
-          <h1 className="font-westmeath uppercase text-xl sm:text-4xl lg:text-5xl text-center my-2">
+          <h1 className="font-westmeath uppercase text-4xl sm:text-4xl lg:text-6xl   sm:my-6 my-2">
             Formules
           </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full ">
             {offers.map((off, id) => (
               <div
                 key={id}
-                className="p-4 border border-gray-200 shadow-md rounded-lg text-center bg-white hover:shadow-lg transition-shadow"
+                className=" card p border border-gray-200 shadow-md rounded-lg text-center bg-white hover:shadow-lg transition-shadow"
               >
-                <h1 className="text-sm sm:text-lg lg:text-xl font-bold font-westmeath uppercase">
+                <h1 className="font-westmeath uppercase text-xl sm:text-4xl lg:text-5xl text-center my-2">
                   {off.nom}
                 </h1>
-                <ul className="mt-2 space-y-1">
+                <ul className="mt space-y-3 sm:space-y-8  sm:my-16 font-mono">
                   {off.inclus.map((item, idx) => (
                     <li
                       key={idx}
-                      className="text-xs sm:text-sm lg:text-base text-gray-700"
+                      className="text-xs font-bold sm:text-xl sm:uppercase text-gray-700"
                     >
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="text-sm sm:text-lg lg:text-xl mt-4 font-semibold">
+                <p className="text-sm sm:text-3xl mt-4 font-extrabold text-red-700">
                   {off.prix} €
                 </p>
               </div>

@@ -1,57 +1,52 @@
-'use client'
-import React, { useState } from 'react';
-import menu from '../assets/data';
-import Item from './Item';
-import { AnimatePresence } from 'motion/react';
+"use client";
+
+import React, { useState } from "react";
+import menu from "../assets/data";
+import Item from "./Item";
+import { AnimatePresence } from "motion/react";
 
 export default function GridMenu() {
-  // État pour stocker le filtre sélectionné
-  const [filter, setFilter] = useState('all');
+  // State to store the selected filter
+  const [filter, setFilter] = useState("all");
 
-  // Menu filtré
-  const filteredMenu = filter === 'all' 
-    ? menu 
-    : menu.filter(item => item.plat === filter);
+  // Filtered menu logic
+  const filteredMenu =
+    filter === "all" ? menu : menu.filter((item) => item.plat === filter);
 
   return (
-    <div className="border-2 mt-8 ">
-      {/* Boutons de filtre */}
-      <div className="flex space-x-4 p-4 justify-center flex-wrap gap-2  ">
-        <button 
-          className="px-4 bg-black py-2 rounded  font-extrabold text-white font-mono uppercase" 
-          onClick={() => setFilter('all')}
-        >
-          Tous
-        </button>
-        <button 
-          className="px-4 bg-black py-2 rounded  font-extrabold text-white font-mono uppercase" 
-          onClick={() => setFilter('entrée')}
-        >
-          Entrées
-        </button>
-        <button 
-          className="px-4 bg-black py-2 rounded  font-extrabold text-white font-mono uppercase"  
-          onClick={() => setFilter('plat chaud')}
-        >
-          Plats chauds
-        </button>
-        <button 
-          className="px-4 bg-black py-2 rounded  font-extrabold text-white font-mono uppercase"  
-          onClick={() => setFilter('dessert')}
-        >
-          Desserts
-        </button>
-      
-      </div>
+    <div className="flex flex-col h-dvh bg-white overflow-y-auto">
+      {/* Wrapper Div with Adjusted Height */}
+      <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col mt-[13vh]">
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center items-center gap-3 p-4">
+          {/* Dynamic filter buttons */}
+          {["all", "entrée", "plat chaud", "dessert"].map((category, idx) => (
+            <button
+              key={idx}
+              className={`px-3 py-1 sm:px-4 sm:py-2 bg-black text-xs sm:text-sm md:text-base rounded font-extrabold text-white font-mono uppercase transition-transform hover:scale-105 ${
+                filter === category ? "bg-gray-700" : ""
+              }`}
+              onClick={() => setFilter(category)}
+            >
+              {category === "all"
+                ? "Tous"
+                : category === "entrée"
+                ? "Entrées"
+                : category === "plat chaud"
+                ? "Plats chauds"
+                : "Desserts"}
+            </button>
+          ))}
+        </div>
 
-      {/* Grille des items */}
-      <div className="grid lg:grid-cols-4  md:grid-cols-3 grid-cols-2 gap-4 border-2 font-westmeath lg:p-24 p-4  ">
-        {filteredMenu.map((item) => (
-          <AnimatePresence key={item.id}>
-
-          <Item infos={item}  />
+        {/* Grid of Items */}
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 p-4 lg:p-12">
+          <AnimatePresence>
+            {filteredMenu.map((item) => (
+              <Item key={item.id} infos={item} />
+            ))}
           </AnimatePresence>
-        ))}
+        </div>
       </div>
     </div>
   );

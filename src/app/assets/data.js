@@ -30,7 +30,7 @@ const menu = [
     },
     {
       id: 2,
-      nom: "Goûter Gourmand",
+      nom: "Goûter",
       description: "Une pause gourmande pour l'après-midi : une part de tarte maison, un cookie ou une madeleine, accompagné d'une boisson chaude ou d'un jus de fruits.",
       prix: 6.0,
       disponibilite: "Après-midi uniquement",
@@ -38,7 +38,7 @@ const menu = [
     },
     {
       id: 3,
-      nom: "Midi",
+      nom: "Dejeuner",
       description: "Un repas équilibré pour le déjeuner : plat du jour au choix, une boisson et un dessert maison pour finir en beauté.",
       prix: 15.0,
       disponibilite: "Midi uniquement",
@@ -46,7 +46,7 @@ const menu = [
     },
     {
       id: 4,
-      nom: " Soir",
+      nom: " Diner",
       description: "Un dîner complet et raffiné : entrée, plat et dessert avec une boisson incluse pour une expérience gastronomique.",
       prix: 25.0,
       disponibilite: "Soir uniquement",
