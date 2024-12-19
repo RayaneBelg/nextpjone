@@ -37,7 +37,7 @@ export default function Offres() {
 
         {/* Content Section */}
         <div className="flex flex-col justify-center items-center px-2">
-          <h1 className="font-westmeath uppercase text-4xl sm:text-4xl lg:text-6xl sm:my-6 my-2">
+          <h1 className="font-westmeath uppercase text-2xl sm:text-4xl lg:text-6xl sm:my-6 my-2">
             Formules
           </h1>
 

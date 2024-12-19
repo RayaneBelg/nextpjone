@@ -26,7 +26,7 @@ export default function GridNew() {
           <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mb-4">
             Discover the Rosa Menu
           </h1>
-          <p className="text-sm sm:text-2xl font-mono font-bold">
+          <p className="text-sm sm:text-lg  font-mono font-bold">
             Indulge in the culinary wonders of Rosa Cuisine. From carefully
             crafted dishes to unparalleled ambiance, we create moments worth
             savoring.
