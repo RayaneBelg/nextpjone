@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { offers } from "../assets/data";
+import Link from "next/link";
 
 export default function Offres() {
   const videoRef = useRef(null);
@@ -37,7 +38,7 @@ export default function Offres() {
 
         {/* Content Section */}
         <div className="flex flex-col justify-center items-center px-2">
-          <h1 className="font-westmeath uppercase text-2xl sm:text-4xl lg:text-6xl sm:my-6 my-2">
+          <h1 className="font-westmeath uppercase text-2xl  lg:text-5xl  my-2">
             Formules
           </h1>
 
@@ -116,7 +117,11 @@ export default function Offres() {
                       </motion.div>
                     ))}
                   </motion.div>
-
+                  <Link href={`/menu`}>
+            <button className="mt-6 px-6 py-2 bg-white hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">
+              Offres Spéciales Rosa
+            </button>
+          </Link>
 
           
         </div>
