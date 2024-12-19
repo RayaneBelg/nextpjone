@@ -60,22 +60,22 @@ export default function Offres() {
                 transition={{ duration: 0.5, delay: id * 0.2 }}
                 className="card border border-gray-200 shadow-md  text-center bg-white hover:shadow-lg transition-shadow"
               >
-                <h1 className="font-westmeath uppercase text-xl sm:text-3xl xl:text-5xl text-center my-2">
-                  {off.nom}
-                </h1>
-                <ul className="mt space-y-3 sm:space-y-4 sm:my-8 font-mono">
-                  {off.inclus.map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="text-xs font-bold sm:text-md sm:uppercase text-gray-700 xl:text-2xl"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-sm sm:text-2xl mt-4 font-extrabold text-red-700 xl:text-3xl">
-                  {off.prix} €
-                </p>
+                <h1 className="font-westmeath uppercase text-xl sm:text-3xl  text-center my-2">
+                {off.nom}
+              </h1>
+              <ul className="space-y-3 sm:space-y-4 sm:my-8 font-mono">
+                {off.inclus.map((item, idx) => (
+                  <li
+                    key={idx}
+                    className="text-xs font-bold sm:uppercase text-gray-700 "
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm sm:text-2xl mt-4 font-extrabold text-red-700 xl:text-3xl">
+                {off.prix} €
+              </p>
               </motion.div>
             ))}
           </motion.div>

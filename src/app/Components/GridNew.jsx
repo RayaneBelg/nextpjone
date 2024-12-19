@@ -43,7 +43,7 @@ export default function GridNew() {
             duration: 0.8,
             staggerChildren: 0.2, // Stagger animation for child elements
           }}
-          className="flex  snap-x snap-mandatory overflow-x-auto gap-4 w-full sm:justify-center p-4"
+          className="flex  snap-x snap-mandatory overflow-x-auto gap-4 w-full lg:justify-center p-4"
         >
           {offers.map((off, id) => (
             <motion.div
@@ -53,14 +53,14 @@ export default function GridNew() {
               transition={{ duration: 0.5, delay: id * 0.2 }}
               className="snap-center card flex-shrink-0 w-80 border border-gray-200 shadow-md text-center bg-white hover:shadow-lg transition-shadow p-4"
             >
-              <h1 className="font-westmeath uppercase text-xl sm:text-3xl xl:text-5xl text-center my-2">
+              <h1 className="font-westmeath uppercase text-xl sm:text-3xl  text-center my-2">
                 {off.nom}
               </h1>
               <ul className="space-y-3 sm:space-y-4 sm:my-8 font-mono">
                 {off.inclus.map((item, idx) => (
                   <li
                     key={idx}
-                    className="text-xs font-bold sm:text-md sm:uppercase text-gray-700 xl:text-2xl"
+                    className="text-xs font-bold sm:uppercase text-gray-700 "
                   >
                     {item}
                   </li>
