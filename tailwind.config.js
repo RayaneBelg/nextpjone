@@ -35,6 +35,13 @@ module.exports = {
        "gradient-boldred": "linear-gradient(to bottom, #b91c1c, #810000)", // Bold red gradient, darker at the bottom // bg-gradient-to-r from-gray-100 to-gray-300
       
       },
+      screens: {
+        sm: "480px", // Small screens (e.g., smartphones)
+        md: "768px", // Medium screens (e.g., tablets)
+        lg: "1280px", // Large screens (e.g., laptops)
+        xl: "1880px", // Extra-large screens (e.g., desktops)
+        xxl: "2000px", // 2x large screens (e.g., big monitors)
+      },
     },
   },
   plugins: [],
