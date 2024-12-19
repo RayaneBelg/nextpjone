@@ -20,10 +20,11 @@ export default function Home() {
 
       
        <HarmonizedCta/>
+       <GridNew/>
       
       
         <AboutCta/>
-       <GridNew/>
+       
       
 
 

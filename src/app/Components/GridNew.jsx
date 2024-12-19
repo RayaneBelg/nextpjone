@@ -23,7 +23,7 @@ export default function GridNew() {
           transition={{ duration: 0.8 }}
           className="text-center p-4"
         >
-          <h1 className="font-westmeath text-3xl lg:text-5xl uppercase ">
+          <h1 className="font-westmeath text-3xl lg:text-5xl mt-4 uppercase ">
             Offres spéciales Rosa
           </h1>
     

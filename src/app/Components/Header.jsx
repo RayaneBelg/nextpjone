@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <motion.div
-      className="fixed top-0 z-50 bg-gradient-cta w-full "
+      className="fixed top-0 z-50 bg-gradient-headover  w-full "
       animate={{ height: scrolled ? '6vh' : '10vh' }}
       transition={{ duration: 0.6 }}
     >
