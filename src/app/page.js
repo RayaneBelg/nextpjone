@@ -5,6 +5,8 @@ import BannerCta from "./Components/BannerCta";
 import Offres from "./Components/Offres";
 import AboutCta from "./Components/AboutCta";
 import HarmonizedCta from "./Components/HarmonizedCta";
+import GridMenu from "./Components/GridMenu";
+import GridNew from "./Components/GridNew";
 
 export default function Home() {
   return (
@@ -21,7 +23,7 @@ export default function Home() {
       
       
         <AboutCta/>
-        <Offres/>
+       <GridNew/>
       
 
 

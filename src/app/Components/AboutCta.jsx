@@ -18,7 +18,7 @@ export default function AboutCta() {
           <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mb-4">
             Bienvenue au Rosa
           </h1>
-          <p className="text-sm lg:text-lg font-mono">
+          <p className="text-sm sm:text-2xl font-mono font-bold">
             Indulge in the culinary wonders of Rosa Cuisine. From carefully
             crafted dishes to unparalleled ambiance, we create moments worth
             savoring.

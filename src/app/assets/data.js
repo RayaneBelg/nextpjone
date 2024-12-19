@@ -52,7 +52,7 @@ const menu = [
       disponibilite: "Soir uniquement",
       inclus: [["Croissant", "Pain au chocolat", "Cookie , Muffin"] , ["jus de fruit au choix"] , ["café ou thé"]]
     },
-  
+ 
   ];
   
  export const articles = [
