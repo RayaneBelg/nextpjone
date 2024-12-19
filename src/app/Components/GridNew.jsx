@@ -46,9 +46,9 @@ export default function GridNew() {
               initial={{ opacity: 0, y: 50 }}
               animate={isCardsInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: id * 0.2 }}
-              className="snap-center card flex-shrink-0 w-80 xl:w-auto border border-gray-200 shadow-md text-center hover:shadow-lg transition-shadow  "
+              className="snap-center card flex-shrink-0 w-80 lg:w-auto border border-gray-200 shadow-md text-center hover:shadow-lg transition-shadow  "
             >
-                <img  className="xl:h-[50vh] " src={off.src}/>
+                <img  className="lg:h-[50vh] " src={off.src}/>
       
             </motion.div>
           ))}

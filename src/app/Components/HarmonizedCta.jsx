@@ -14,7 +14,7 @@ export default function HarmonizedCta() {
       className="flex flex-col justify-center items-center snap-start h-dvh bg-gradient-cta p-4"
     >
       {/* Wrapper Div for Content with Adjusted Height */}
-      <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col sm:flex-row justify-center items-center">
+      <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col lg:flex-row justify-center items-center">
         {/* Images Section */}
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
