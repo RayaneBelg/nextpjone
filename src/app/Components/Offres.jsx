@@ -25,7 +25,7 @@ export default function Offres() {
           className="flex-shrink-0 w-full origin-top"
         >
           <video
-            className="h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] w-full object-cover object-bottom"
+            className="h-[25vh] sm:h-[30vh] md:h-[30vh] lg:h-[40vh] w-full object-cover object-bottom"
             src="../../head.mov"
             autoPlay
             loop
@@ -38,7 +38,7 @@ export default function Offres() {
 
         {/* Content Section */}
         <div className="flex flex-col justify-center items-center px-2">
-          <h1 className="font-westmeath uppercase text-2xl  lg:text-5xl  my-2">
+          <h1 className="font-westmeath uppercase text-2xl    my-2">
             Formules
           </h1>
 
