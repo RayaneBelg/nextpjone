@@ -112,3 +112,18 @@ const menu = [
       tags: ["partenariats", "local", "qualité"]
     }
   ];
+
+  export const flash = [
+    {
+      id : 1,
+      src : "../../burger.png",
+    },
+    {
+      id : 2,
+      src : "../../steaks.png",
+    },
+    {
+      id : 3,
+      src : "../../fishnchips.png",
+    },
+  ]
