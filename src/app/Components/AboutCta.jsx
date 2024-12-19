@@ -16,15 +16,15 @@ export default function AboutCta() {
           className="text-center lg:text-left lg:w-[50%] p-4"
         >
           <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mb-4">
-            Discover the Rosa Experience
+            Bienvenue au Rosa
           </h1>
-          <p className="text-sm lg:text-lg">
+          <p className="text-sm lg:text-lg font-mono">
             Indulge in the culinary wonders of Rosa Cuisine. From carefully
             crafted dishes to unparalleled ambiance, we create moments worth
             savoring.
           </p>
           <button className="mt-6 px-6 py-2 bg-white hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">
-            Explore Our Menu
+            Actualités
           </button>
         </motion.div>
 

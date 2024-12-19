@@ -23,16 +23,16 @@ export default function Contact() {
             alt="Contact"
           />
           <h1 className="text-2xl lg:text-4xl font-westmeath mt-4 text-center lg:text-left">
-            Get in Touch
+            Comment nous trouver ?
           </h1>
-          <p className="text-gray-700 text-sm lg:text-base text-center lg:text-left px-2 lg:px-0">
-            We’re here to assist you! Reach out through any of the channels below.
+          <p className="text-gray-700 text-sm lg:text-base text-center lg:text-left px-2 lg:px-0 uppercase font-bold">
+            Nous sommes ouvert tout les jours de 7:00 à 23:00
           </p>
         </motion.div>
 
         {/* Right Section: Contact Details */}
         <motion.div
-          className="flex flex-col items-start justify-center gap-4 w-full lg:w-1/2"
+          className="flex flex-col items-start justify-center gap-2 w-full lg:w-1/2 font-mono"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -41,9 +41,9 @@ export default function Contact() {
           <div className="flex items-center gap-3">
             <FaMapMarkerAlt className="text-lg lg:text-2xl text-black" />
             <div>
-              <h2 className="text-base lg:text-xl font-semibold">Our Address</h2>
+              <h2 className="text-base lg:text-xl font-semibold">Addresse du restaurant</h2>
               <p className="text-gray-700 text-sm lg:text-base">
-                123 Rosa Lane, Blossom City, FL 45678
+                4 Pl Abbé Pierre 69009
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Contact() {
           <div className="flex items-center gap-3">
             <FaPhoneAlt className="text-lg lg:text-2xl text-black" />
             <div>
-              <h2 className="text-base lg:text-xl font-semibold">Call Us</h2>
+              <h2 className="text-base lg:text-xl font-semibold">Nous appeler</h2>
               <p className="text-gray-700 text-sm lg:text-base">+1 (123) 456-7890</p>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Contact() {
             <FaEnvelope className="text-lg lg:text-2xl text-black" />
             <div>
               <h2 className="text-base lg:text-xl font-semibold">Email</h2>
-              <p className="text-gray-700 text-sm lg:text-base">info@rosacuisine.com</p>
+              <p className="text-gray-700 text-sm lg:text-base">info@rosacuisine.fr</p>
             </div>
           </div>
         </motion.div>
@@ -70,12 +70,10 @@ export default function Contact() {
 
       {/* Map */}
       <div className="w-full h-[150px] lg:h-[250px] mt-4 rounded-lg overflow-hidden">
-        <iframe
-          className="w-full h-full sm:h-[30vh]"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.543234180184!2d-122.40141202413465!3d37.7873599796568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c3b52f55d%3A0x1e5ecbb20c25ec8a!2s123%20Rosa%20Ln%2C%20San%20Francisco%2C%20CA%2094132%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000"
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
+     
+        <iframe 
+        className="w-full h-full sm:h-[30vh]"
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d89032.10894496374!2d4.713508226355309!3d45.78615078481529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47f4eb5e4dc8e601%3A0xe70336dc96c30659!2s4%20Pl.%20de%20l%E2%80%99Abb%C3%A9%20Pierre%2C%2069009%20Lyon!3m2!1d45.7861804!2d4.795908799999999!5e0!3m2!1sfr!2sfr!4v1734572535510!5m2!1sfr!2sfr"  loading="lazy"></iframe>
       </div>
     </div>
   );

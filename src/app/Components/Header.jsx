@@ -28,7 +28,7 @@ export default function Header() {
       <div className="flex justify-between items-center px-4 h-full">
         {/* Left Section */}
         <div className="w-1/3 flex justify-start">
-          <AiFillTikTok size={40} color="white" />
+          <AiFillTikTok size={40} color="black" />
         </div>
 
         {/* Center Section */}
@@ -44,7 +44,7 @@ export default function Header() {
 
         {/* Right Section */}
         <div className="w-1/3 flex justify-end">
-          <FaInstagramSquare size={40} color="white" />
+          <FaInstagramSquare size={40} color="black" />
         </div>
       </div>
 

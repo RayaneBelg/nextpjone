@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -44,33 +45,49 @@ export default function Footer() {
           }`}
         >
           {/* Main Footer Content */}
-          <div className="p-4">
-            <h2 className="text-lg font-bold">Contact Us</h2>
-            <div className="flex flex-col gap-3 mt-3">
-              {/* Address */}
-              <div className="flex items-center gap-3">
-                <FaMapMarkerAlt className="text-lg text-white" />
-                <span className="text-sm">123 Rosa Lane, Blossom City</span>
-              </div>
-              {/* Phone */}
-              <div className="flex items-center gap-3">
-                <FaPhoneAlt className="text-lg text-white" />
-                <span className="text-sm">+1 (123) 456-7890</span>
-              </div>
-              {/* Email */}
-              <div className="flex items-center gap-3">
-                <FaEnvelope className="text-lg text-white" />
-                <span className="text-sm">info@rosacuisine.com</span>
-              </div>
+          
+            
+        
+
+            <motion.div
+          className="flex flex-col font-mono justify-between h-[40vh] p-8 "
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          {/* Address */}
+          <div className="flex items-center gap-3 ">
+            <FaMapMarkerAlt size={30} className="text-lg lg:text-2xl text-red-700" />
+            <div>
+              <h2 className="text-base lg:text-xl font-semibold uppercase">Addresse du restaurant</h2>
+              <p className=" text-sm lg:text-base">
+                4 Pl Abbé Pierre 69009
+              </p>
             </div>
+          </div>
+
+          {/* Phone */}
+          <div className="flex items-center gap-3">
+            <FaPhoneAlt size={30}   className="text-lg lg:text-2xl text-red-700" />
+            <div>
+              <h2 className="text-base lg:text-xl font-semibold uppercase">Nous appeler</h2>
+              <p className="text-sm lg:text-base">+1 (123) 456-7890</p>
+            </div>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-center gap-3">
+            <FaEnvelope  size={30}  className="text-lg lg:text-2xl text-red-700" />
+            <div>
+              <h2 className="text-base lg:text-xl font-semibold uppercase">Email</h2>
+              <p className=" text-sm lg:text-base">info@rosacuisine.fr</p>
+            </div>
+          </div>
+        </motion.div>
 
             {/* Additional Links */}
-            <ul className="mt-4 space-y-2 text-sm">
-              <li>• Privacy Policy</li>
-              <li>• Terms & Conditions</li>
-              <li>• FAQ</li>
-            </ul>
-          </div>
+           
+         
         </div>
 
         {/* Footer Icon Always Visible */}
