@@ -63,9 +63,9 @@ export default function HarmonizedCta() {
             savoring.
           </p>
           <Link href={`/menu`}>
-            <button className="mt-6 px-6 py-2 bg-white hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">
-              Explorer notre menu
-            </button>
+          <button className="mt-6 px-6 py-2 hover:bg-black  text-gray-200 border-2 border-gray-200 rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">
+            Découvrir le Menu
+          </button>
           </Link>
         </motion.div>
       </div>

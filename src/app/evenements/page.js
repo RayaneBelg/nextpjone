@@ -15,12 +15,17 @@ export default function page() {
     className=''>
      <Hero/>
      <div>
-      <h1 className='text-4xl font-bold font-westmeath uppercase text-center'>Actualités</h1> 
-
-      <p className='font-mono font-bold text-justify'>La page ACTU/BLOG de notre restaurant est votre destination privilégiée pour rester informé de toutes nos nouveautés et inspirations culinaires. Vous y découvrirez des articles variés, allant des recettes emblématiques de notre chef aux événements spéciaux que nous organisons, en passant par des conseils pratiques et des partenariats avec des producteurs locaux.</p>
+     <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mb-4 text-center">
+            Actualités
+          </h1>
+          <p className="text-sm sm:text-2xl font-mono font-bold text-center">
+            Indulge in the culinary wonders of Rosa Cuisine. From carefully
+            crafted dishes to unparalleled ambiance, we create moments worth
+            savoring.
+          </p>
      </div>
 
-     <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6  p-8' >
+     <div className='grid grid-cols-1 md:grid-cols-3  xl:grid-cols-5 gap-8  p-8' >
 
       {
         articles.map((card , id)=>(
