@@ -49,18 +49,16 @@ export default function HarmonizedCta() {
 
         {/* Text Section */}
         <motion.div
-          initial={{ x: 50, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : {}}
+          initial={{ y: 50, opacity: 0 }}
+          animate={isInView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
           className="text-center lg:text-left lg:w-[50%] p-4 sm:order-2 order-2 text-gray-200"
         >
          <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mb-4 ">
-            Bienvenue au Rosa
+            La Carte
           </h1>
           <p className="text-sm sm:text-2xl font-mono font-bold">
-            Indulge in the culinary wonders of Rosa Cuisine. From carefully
-            crafted dishes to unparalleled ambiance, we create moments worth
-            savoring.
+          Des produits frais, locaux et soigneusement sélectionnés pour vous offrir des saveurs authentiques et des plats d’exception. Découvrez une cuisine qui allie tradition et modernité.
           </p>
           <Link href={`/menu`}>
           <button className="mt-6 px-6 py-2 hover:bg-black  text-gray-200 border-2 border-gray-200 rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">

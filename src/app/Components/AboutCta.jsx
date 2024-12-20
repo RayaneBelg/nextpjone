@@ -19,9 +19,7 @@ export default function AboutCta() {
             Bienvenue au Rosa
           </h1>
           <p className="text-sm sm:text-2xl font-mono font-bold">
-            Indulge in the culinary wonders of Rosa Cuisine. From carefully
-            crafted dishes to unparalleled ambiance, we create moments worth
-            savoring.
+          Situé au cœur de Lyon, Le Ros est bien plus qu’un simple restaurant. C’est un espace de partage, d’émotions et de découvertes gastronomiques. Chaque plat est une ode à la créativité et au goût
           </p>
           <button className="mt-6 px-6 py-2 hover:bg-black  text-gray-200 border-2 border-gray-200 rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">
             Actualités
