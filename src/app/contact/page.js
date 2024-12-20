@@ -20,15 +20,15 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left lg:w-[50%] p-4 text-black"
           >
-            <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mt-2">
+            <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mt-4">
              où nous trouver ?
             </h1>
-            <p className="text-sm sm:text-2xl font-mono font-bold mb-4">
+            <p className="text-sm sm:text-2xl font-mono font-bold mb-2">
               Nous sommes ouverts tous les jours de 7:00 à 23:00
             </p>
 
             {/* Contact Details */}
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2 font-mono">
               {/* Address */}
               <div className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-xl lg:text-2xl text-black" />
@@ -43,7 +43,7 @@ export default function Contact() {
               </div>
 
               {/* Phone */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <FaPhoneAlt className="text-xl lg:text-2xl text-black" />
                 <div>
                   <h2 className="text-lg lg:text-xl font-semibold">
@@ -56,7 +56,7 @@ export default function Contact() {
               </div>
 
               {/* Email */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <FaEnvelope className="text-xl lg:text-2xl text-black" />
                 <div>
                   <h2 className="text-lg lg:text-xl font-semibold">Email</h2>
@@ -97,7 +97,7 @@ export default function Contact() {
                 className="text-center lg:text-left lg:w-[50%] p-4 text-gray-200"
               >
                 <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mb-4 ">
-                Réservez le 1er étage pour vos événements privés
+                Réserver le 1er étage
                 </h1>
                 <p className="text-sm sm:text-2xl font-mono font-bold">
                 Anniversaires, réunions, ou soirées privées—profitez d'un cadre
