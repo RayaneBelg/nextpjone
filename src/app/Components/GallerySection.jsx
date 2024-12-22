@@ -13,7 +13,7 @@ export default function GallerySection() {
     <div className="h-dvh snap-start bg-gray-100">
       <div
         ref={ref}
-        className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col justify-center items-center overflow-hidden p-6"
+        className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col justify-end items-center overflow-hidden p-6"
       >
         <motion.div
           initial={{ opacity: 0,  }}
@@ -25,7 +25,7 @@ export default function GallerySection() {
             La SAlle
           </h1>
           <p className="text-sm sm:text-2xl font-mono font-bold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto cum repudiandae aperiam ratione molestiae  </p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.   </p>
         </motion.div>
 
         <motion.div

@@ -14,9 +14,9 @@ export default function Offres() {
   const isCardsInView = useInView(cardsRef, { once: true });
 
   return (
-    <div className="flex flex-col justify-center snap-start h-dvh bg-gradient-softgray ">
+    <div className="flex flex-col justify-center snap-start h-dvh bg-gradient-softgray  relative">
       {/* Wrapper Div for Content with Adjusted Height */}
-      <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col relative">
+      <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col">
         {/* Video Section */}
         <motion.div
           ref={videoRef}
@@ -106,7 +106,7 @@ export default function Offres() {
                           {off.inclus.map((item, idx) => (
                             <li
                               key={idx}
-                              className="text-xs font-bold xl:uppercase xl:text-4xl text-gray-700 "
+                              className="text-md font-bold xl:uppercase xl:text-3xl text-black "
                             >
                               {item}
                             </li>
@@ -119,7 +119,7 @@ export default function Offres() {
                     ))}
                   </motion.div>
                   <Link href={`/menu`}>
-            <button className=" px-6 py-2 bg-white hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg xl:text-3xl font-bold uppercase">
+            <button className=" px-6 py-2 bg-white hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg xl:text-3xl font-bold uppercase sm:hidden xl:block">
               Offres Spéciales Rosa
             </button>
           </Link>
