@@ -19,7 +19,7 @@ export default function GallerySection() {
           initial={{ opacity: 0,  }}
           animate={isInView ? { opacity: 1,  } : {}}
           transition={{ duration: 0.3 }}
-          className="text-center mt-24"
+          className="text-center mt-24 "
         >
           <h1 className="font-westmeath text-3xl lg:text-5xl uppercase  ">
             La SAlle
