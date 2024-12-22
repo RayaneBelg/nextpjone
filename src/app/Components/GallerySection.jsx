@@ -25,7 +25,7 @@ export default function GallerySection() {
             La SAlle
           </h1>
           <p className="text-sm sm:text-2xl font-mono font-bold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto cum repudiandae aperiam ratione molestiae pariatur numquam </p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto cum repudiandae aperiam ratione molestiae  </p>
         </motion.div>
 
         <motion.div

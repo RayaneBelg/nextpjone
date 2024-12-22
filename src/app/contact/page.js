@@ -2,16 +2,17 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope , FaChevronDown} from "react-icons/fa";
 import GallerySection from "../Components/GallerySection";
 
 export default function Contact() {
+
   const weekSlots = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
   return (
     <div className="h-dvh snap-y snap-mandatory overflow-y-auto">
       {/* Section 1: Contact Details */}
-      <div className="flex flex-col justify-center items-center snap-start h-dvh text-black ">
+      <div className="flex flex-col justify-center items-center snap-start h-dvh text-black relative ">
         {/* Content Wrapper with Adjusted Height */}
         <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col lg:flex-row justify-center items-center px-4">
           {/* Left Content */}
@@ -31,10 +32,10 @@ export default function Contact() {
             {/* Contact Details */}
             <div className="flex flex-col gap-2 font-mono">
               {/* Address */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <FaMapMarkerAlt className="text-xl lg:text-2xl text-black" />
                 <div>
-                  <h2 className="text-lg lg:text-xl font-semibold">
+                  <h2 className="text-sm lg:text-xl font-semibold">
                     Adresse du restaurant
                   </h2>
                   <p className="text-black text-sm lg:text-lg">
@@ -47,10 +48,10 @@ export default function Contact() {
               <div className="flex items-center gap-2">
                 <FaPhoneAlt className="text-xl lg:text-2xl text-black" />
                 <div>
-                  <h2 className="text-lg lg:text-xl font-semibold">
+                  <h2 className="text-sm lg:text-xl font-semibold">
                     Nous appeler
                   </h2>
-                  <p className="text-blacktext-sm lg:text-lg">
+                  <p className="text-black text-sm lg:text-lg">
                     +1 (123) 456-7890
                   </p>
                 </div>
@@ -60,7 +61,7 @@ export default function Contact() {
               <div className="flex items-center gap-2">
                 <FaEnvelope className="text-xl lg:text-2xl text-black" />
                 <div>
-                  <h2 className="text-lg lg:text-xl font-semibold">Email</h2>
+                  <h2 className="text-sm lg:text-xl font-semibold">Email</h2>
                   <p className="text-black text-sm lg:text-lg">
                     info@rosacuisine.fr
                   </p>
@@ -83,13 +84,22 @@ export default function Contact() {
             ></iframe>
           </motion.div>
         </div>
+          {/* Scroll Down Animation */}
+              <motion.div
+                initial={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 0, y: 20 }}
+                transition={{ duration: .8  , ease: "easeInOut", repeat: Infinity, repeatType: "loop" , repeatDelay :3}}
+                className="absolute bottom-[8vh] flex justify-center items-center"
+              >
+                <FaChevronDown className="text-black text-3xl" />
+              </motion.div>
 
 
       </div>
 
 
       {/* Section 2: Reservation Details */}
-       <div className="flex flex-col justify-center items-center snap-start h-dvh  text-black bg-gradient-boldred">
+       <div className="flex flex-col justify-center items-center snap-start h-dvh  text-black bg-gradient-boldred relative">
             {/* Content Wrapper with Adjusted Height */}
             <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col lg:flex-row justify-center items-center px-4">
               {/* Left Content */}
@@ -125,12 +135,20 @@ export default function Contact() {
                 />
               </motion.div>
             </div>
+              {/* Scroll Down Animation */}
+                  <motion.div
+                    initial={{ opacity: 1, y: 0 }}
+                    animate={{ opacity: 0, y: 20 }}
+                    transition={{ duration: .8  , ease: "easeInOut", repeat: Infinity, repeatType: "loop" , repeatDelay :3}}
+                    className="absolute bottom-[8vh] flex justify-center items-center"
+                  >
+                    <FaChevronDown className="text-gray-200 text-3xl" />
+                  </motion.div>
+            
+
           </div>
 
-      {/* Map Section */}
-      <div className="w-[80%] lg:w-[60%] object-cover rounded-lg shadow-lg">
      
-      </div>
       <GallerySection/>
     </div>
   );

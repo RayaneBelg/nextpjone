@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
       >
       <Header/>
       <PageTransition/>
+      
       <Loader/>
-     
     
         {children}
         <Footer/>

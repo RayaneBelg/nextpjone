@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { offers } from "../assets/data";
 import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa";
 
 export default function Offres() {
   const videoRef = useRef(null);
@@ -13,9 +14,9 @@ export default function Offres() {
   const isCardsInView = useInView(cardsRef, { once: true });
 
   return (
-    <div className="flex flex-col justify-center snap-start h-dvh bg-gradient-softgray">
+    <div className="flex flex-col justify-center snap-start h-dvh bg-gradient-softgray ">
       {/* Wrapper Div for Content with Adjusted Height */}
-      <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col">
+      <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col relative">
         {/* Video Section */}
         <motion.div
           ref={videoRef}
@@ -118,7 +119,7 @@ export default function Offres() {
                     ))}
                   </motion.div>
                   <Link href={`/menu`}>
-            <button className="mt-6 px-6 py-2 bg-white hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg xl:text-3xl font-bold uppercase">
+            <button className=" px-6 py-2 bg-white hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg xl:text-3xl font-bold uppercase">
               Offres Spéciales Rosa
             </button>
           </Link>
@@ -126,6 +127,14 @@ export default function Offres() {
           
         </div>
       </div>
+       <motion.div
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 0, y: 20 }}
+              transition={{ duration: .8  , ease: "easeInOut", repeat: Infinity, repeatType: "loop" , repeatDelay :3}}
+              className="absolute bottom-[8vh] flex justify-center items-center w-full"
+            >
+              <FaChevronDown className="text-black text-3xl" />
+            </motion.div>
     </div>
   );
 }
