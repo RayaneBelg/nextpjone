@@ -25,17 +25,17 @@ export default function Header() {
       animate={{ height: scrolled ? '6vh' : '10vh' }}
       transition={{ duration: 0.6 }}
     >
-      <div className="flex justify-between items-center px-4 h-full">
+      <div className="flex justify-between items-center px-4 h-full ">
         {/* Left Section */}
         <div className="w-1/3 flex justify-start">
-          <AiFillTikTok size={40} color="black" />
+          <AiFillTikTok size={50} color="black" />
         </div>
 
         {/* Center Section */}
-        <div className="p-2 flex justify-center">
+        <div className=" my-2  flex justify-center">
           <Link href="/">
             <img
-              className={`   ${scrolled ? 'h-[5vh]' : 'h-[10vh]'}`}
+              className={`   ${scrolled ? 'h-[5vh]' : 'h-[8vh]'}`}
               src={scrolled ? '../../IconeBlack.png' : '../../Rosablack.png'}
               alt="Hero Banner"
             />
@@ -44,7 +44,7 @@ export default function Header() {
 
         {/* Right Section */}
         <div className="w-1/3 flex justify-end">
-          <FaInstagramSquare size={40} color="black" />
+          <FaInstagramSquare size={50} color="black" />
         </div>
       </div>
 

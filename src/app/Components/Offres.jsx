@@ -111,7 +111,7 @@ export default function Offres() {
                             </li>
                           ))}
                         </ul>
-                        <p className="text-sm  mt-4 font-extrabold text-red-700 xl:text-5xl">
+                        <p className="text-sm  mt-4 font-extrabold text-red-700 xl:text-5xl font-westmeath">
                           {off.prix} €
                         </p>
                       </motion.div>

@@ -23,25 +23,28 @@ export default function HarmonizedCta() {
             duration: 0.8,
             delay: 0.2,
           }}
-          className="grid grid-cols-2 gap-1 sm:gap-2 px-4 mx-4 sm:w-[50%] sm:order-1 order-1"
+          className="grid grid-cols-2 gap-1  px-4 mx-4 sm:w-[50%] sm:order-1 order-1"
         >
           <img
-            className="sm:h-[30vh] sm:w-[30vh] object-cover border-2 border-gray-200"
+            className="sm:h-[30vh] sm:w-auto object-cover border-2 border-gray-200"
             src="../../herobann.jpg"
             alt="Hero Banner"
           />
           <img
-            className="sm:h-[30vh] sm:w-[30vh] object-cover border-2 border-gray-200"
+            className="sm:h-[30vh]  object-cover border-2 border-gray-200"
+          
             src="../../herobann.jpg"
             alt="Hero Banner"
           />
           <img
-            className="sm:h-[30vh] sm:w-[30vh] object-cover border-2 border-gray-200"
+            className="sm:h-[30vh]  object-cover border-2 border-gray-200"
+            
             src="../../herobann.jpg"
             alt="Hero Banner"
           />
           <img
-            className="sm:h-[30vh] sm:w-[30vh] object-cover border-2 border-gray-200"
+            className="sm:h-[30vh]  object-cover border-2 border-gray-200"
+           
             src="../../herobann.jpg"
             alt="Hero Banner"
           />

@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import GallerySection from "../Components/GallerySection";
 
 export default function Contact() {
   const weekSlots = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -82,6 +83,8 @@ export default function Contact() {
             ></iframe>
           </motion.div>
         </div>
+
+
       </div>
 
 
@@ -128,6 +131,7 @@ export default function Contact() {
       <div className="w-[80%] lg:w-[60%] object-cover rounded-lg shadow-lg">
      
       </div>
+      <GallerySection/>
     </div>
   );
 }
