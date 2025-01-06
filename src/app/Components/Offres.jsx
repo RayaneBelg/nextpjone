@@ -40,7 +40,7 @@ export default function Offres() {
         {/* Content Section */}
         <div className="flex flex-col justify-center items-center px-2">
           <h1 className="font-westmeath uppercase text-2xl  xl:text-6xl  my-2">
-            Formules
+            Nos Formules
           </h1>
 
           {/* Grid of Cards */}
@@ -99,7 +99,7 @@ export default function Offres() {
                         transition={{ duration: 0.5, delay: id * 0.2 }}
                         className="snap-center card flex-shrink-0 w-80  xl:w-[30rem] border border-gray-200 shadow-md text-center bg-white hover:shadow-lg transition-shadow p-4"
                       >
-                        <h1 className="font-westmeath uppercase text-xl xl:text-6xl  text-center my-2">
+                        <h1 className="font-westmeath uppercase text-xl xl:text-6xl  text-center my-2 text-red-700">
                           {off.nom}
                         </h1>
                         <ul className="space-y-3 sm:space-y-4 sm:my-8 font-mono">
@@ -112,7 +112,7 @@ export default function Offres() {
                             </li>
                           ))}
                         </ul>
-                        <p className="text-sm  mt-4 font-extrabold text-red-700 xl:text-5xl font-westmeath">
+                        <p className="text-lg mt-4 font-extrabold text-red-700 xl:text-5xl font-westmeath">
                           {off.prix} €
                         </p>
                       </motion.div>

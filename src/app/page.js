@@ -7,6 +7,7 @@ import AboutCta from "./Components/AboutCta";
 import HarmonizedCta from "./Components/HarmonizedCta";
 import GridMenu from "./Components/GridMenu";
 import GridNew from "./Components/GridNew";
+import HeroShorts from "./Components/HeroShorts";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       
       
         <AboutCta/>
+        <HeroShorts/>
        
       
 

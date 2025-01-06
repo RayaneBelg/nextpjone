@@ -11,8 +11,8 @@ export default function ArtCard({ infos }) {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      initial={{ opacity: 0,  }}
+      animate={isInView ? { opacity: 1 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="card flex flex-col bg-gradient-lightgray shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
     >
