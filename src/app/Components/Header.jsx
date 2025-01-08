@@ -77,11 +77,11 @@ export default function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black flex flex-col justify-center items-center z-50"
+          className="fixed inset-0 bg-black flex flex-col justify-start items-center z-50"
         >
-          <div className="my-4 absolute top-2">
+          <div className="my-4 ">
             <img
-              className="h-[20vh]"
+              className="h-[15vh]"
               src="../../RosaWhite.png"
               alt="Logo"
             />

@@ -16,7 +16,7 @@ export default function Offres() {
   return (
     <div className="flex flex-col justify-center snap-start h-dvh bg-gradient-softgray  relative">
       {/* Wrapper Div for Content with Adjusted Height */}
-      <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col">
+      <div className="h-[calc(100%-theme(space.16)-theme(space.6))] flex flex-col">
         {/* Video Section */}
         <motion.div
           ref={videoRef}
