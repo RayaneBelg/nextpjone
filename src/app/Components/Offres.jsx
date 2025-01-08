@@ -26,7 +26,7 @@ export default function Offres() {
           className="flex-shrink-0 w-full origin-top"
         >
           <video
-            className=" h-[18vh] sm:h-[25vh]  w-full object-cover object-bottom"
+            className=" h-[15vh] sm:h-[25vh]  w-full object-cover object-bottom"
             src="../../head.mov"
             autoPlay
             loop

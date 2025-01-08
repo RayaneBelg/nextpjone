@@ -33,11 +33,18 @@ export default function HeroShorts() {
       {/* Grid Mode */}
       {!isFullScreen && (
         <div className="h-[calc(100%)] flex flex-col justify-center items-center overflow-hidden">
-          <div className="text-center p-4">
+            <div className="flex flex-col items-center gap-2">
+          <div className="flex  gap-2 items-center">
+          <img className="h-10" src="/IconeBlack.png" alt="Logo" />
             <h1 className="font-westmeath text-3xl lg:text-5xl uppercase">
               Bienvenue au Rosa
             </h1>
-            <img className="h-14" src="/IconeBlack.png" alt="Logo" />
+            <img className="h-10" src="/IconeBlack.png" alt="Logo" />
+        
+          </div>
+          <p className="text-sm sm:text-2xl font-mono font-bold text-center">
+          Situé au cœur de Lyon, Le Rosa est bien plus qu’un simple restaurant.
+          </p>
           </div>
 
           <div className="flex snap-x snap-mandatory overflow-x-auto gap-4 w-full lg:justify-center p-4">

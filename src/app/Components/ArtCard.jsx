@@ -28,7 +28,7 @@ export default function ArtCard({ infos }) {
       {/* Content Section */}
       <div className="flex flex-col justify-between p-4 flex-grow">
         {/* Title and Subtitle */}
-        <div>
+        <div className="">
           <h1 className="font-westmeath text-xl sm:text-2xl lg:text-3xl uppercase mb-2">
             {infos.titre}
           </h1>
