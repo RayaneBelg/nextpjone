@@ -39,7 +39,7 @@ export default function Header() {
   return (
     <motion.div
       className="fixed top-0 z-50 bg-gradient-headover w-full"
-      animate={{ height: scrolled ? '6vh' : '10vh' }}
+      animate={{ height: scrolled ? '6vh' : '7vh' }}
       transition={{ duration: 0.6 }}
     >
       <div className="flex justify-between items-center px-4 h-full">
@@ -52,7 +52,7 @@ export default function Header() {
         <div className="my-2 flex justify-center">
           <Link href="/">
             <img
-              className={`${scrolled ? 'h-[5vh]' : 'h-[8vh]'}`}
+              className={`${scrolled ? 'h-[5vh]' : 'h-[6vh]'}`}
               src={scrolled ? '../../IconeBlack.png' : '../../Rosablack.png'}
               alt="Hero Banner"
             />
@@ -98,7 +98,7 @@ export default function Header() {
               variants={staggeredVariants}
               initial="hidden"
               animate="visible"
-              className="text-5xl md:text-9xl text-center text-white font-westmeath uppercase"
+              className="text-5xl lg:text-7xl text-center text-white font-westmeath uppercase"
             >
               <Link href="/menu" onClick={() => setMenuOpen(false)}>Carte</Link>
             </motion.li>
@@ -107,18 +107,27 @@ export default function Header() {
               variants={staggeredVariants}
               initial="hidden"
               animate="visible"
-              className="text-5xl md:text-9xl  text-center text-white font-westmeath uppercase"
+              className="text-5xl md:text-7xl  text-center text-white font-westmeath uppercase"
             >
-              <Link href="/evenements" onClick={() => setMenuOpen(false)}>Actu</Link>
+              <Link href="/evenements" onClick={() => setMenuOpen(false)}>Blog</Link>
             </motion.li>
             <motion.li
               custom={2}
               variants={staggeredVariants}
               initial="hidden"
               animate="visible"
-              className="text-5xl text-center md:text-9xl text-white font-westmeath uppercase"
+              className="text-5xl text-center md:text-7xl text-white font-westmeath uppercase"
             >
               <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+            </motion.li>
+            <motion.li
+              custom={2}
+              variants={staggeredVariants}
+              initial="hidden"
+              animate="visible"
+              className="text-5xl text-center md:text-7xl text-white font-westmeath uppercase"
+            >
+              <Link href="/events" onClick={() => setMenuOpen(false)}>Privatisation</Link>
             </motion.li>
           </ul>
         </motion.div>
