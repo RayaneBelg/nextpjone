@@ -2,9 +2,10 @@
 
 import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import {  FaChevronDown} from "react-icons/fa";
 import Link from "next/link";
 
-const urls = ["../../../rosain.jpg", "../../../herobann.jpg"];
+const urls = [ "../../../Rosagal5.jpeg", "../../../Rosagal1.jpeg" , "../../../Rosagal2.jpeg" , "../../../Rosagal3.jpeg" , "../../../Rosagal4.jpeg"];
 const galleryImages = Array.from({ length: 10 }, (_, index) => urls[index % urls.length]);
 
 export default function GallerySection() {
@@ -82,6 +83,14 @@ export default function GallerySection() {
               Nous appeller
             </button>
           </Link>
+          <motion.div
+                    initial={{ opacity: 1, y: 0 }}
+                    animate={{ opacity: 0, y: 20 }}
+                    transition={{ duration: .8  , ease: "easeInOut", repeat: Infinity, repeatType: "loop" , repeatDelay :3}}
+                    className="absolute bottom-[8vh] flex justify-center items-center"
+                  >
+                    <FaChevronDown className="text-black-200 text-3xl text-center" />
+                  </motion.div>
       </div>
 
       {lightboxOpen && (
@@ -111,8 +120,10 @@ export default function GallerySection() {
           >
             &gt;
           </button>
+
         </div>
       )}
+    
     </div>
   );
 }

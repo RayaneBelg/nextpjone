@@ -60,7 +60,7 @@ export default function Header() {
           <Link href="/">
             <img
               className={`${scrolled ? 'h-[5vh]' : 'h-[6vh]'}`}
-              src={scrolled ? '../../IconeBlack.png' : '../../RosaWhite.png'}
+              src={scrolled ? '../../IconeBlack.png' : '../../Rosaheader.png'}
               alt="Hero Banner"
             />
           </Link>
@@ -79,11 +79,11 @@ export default function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black flex flex-col justify-start items-center z-50"
+          className="fixed inset-0 bg-black flex flex-col justify-around items-center z-50"
         >
           <div className="my-4 ">
             <img
-              className="h-[15vh]"
+              className="h-[20vh]"
               src="../../RosaWhite.png"
               alt="Logo"
             />
@@ -111,7 +111,7 @@ export default function Header() {
               animate="visible"
               className="text-5xl md:text-7xl  text-center text-white font-westmeath uppercase"
             >
-              <Link href="/evenements" onClick={() => setMenuOpen(false)}>Blog</Link>
+              {/*<Link href="/evenements" onClick={() => setMenuOpen(false)}>Blog</Link>
             </motion.li>
             <motion.li
               custom={2}
@@ -119,7 +119,7 @@ export default function Header() {
               initial="hidden"
               animate="visible"
               className="text-5xl text-center md:text-7xl text-white font-westmeath uppercase"
-            >
+            >*/}
               <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
             </motion.li>
             <motion.li

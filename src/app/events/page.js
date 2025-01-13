@@ -7,6 +7,7 @@ import GallerySection from "../Components/GallerySection";
 export default function page() {
   return (
     <div className="h-dvh snap-y snap-mandatory overflow-y-auto">
+       <GallerySection/>
       <div className="flex flex-col justify-center items-center snap-start h-dvh  text-black bg-gradient-boldred relative">
             {/* Content Wrapper with Adjusted Height */}
             <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col lg:flex-row justify-center items-center px-4">
@@ -44,20 +45,13 @@ export default function page() {
               </motion.div>
             </div>
               {/* Scroll Down Animation */}
-                  <motion.div
-                    initial={{ opacity: 1, y: 0 }}
-                    animate={{ opacity: 0, y: 20 }}
-                    transition={{ duration: .8  , ease: "easeInOut", repeat: Infinity, repeatType: "loop" , repeatDelay :3}}
-                    className="absolute bottom-[8vh] flex justify-center items-center"
-                  >
-                    <FaChevronDown className="text-gray-200 text-3xl" />
-                  </motion.div>
+                
             
 
           </div>
 
      
-      <GallerySection/>
+     
       
     </div>
   )
