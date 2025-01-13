@@ -24,7 +24,7 @@ export default function Footer() {
 
       {/* Footer */}
       <div
-        className={`fixed bottom-0 w-full bg-gradient-headover text-white z-50 transition-all duration-500 ${
+        className={`fixed bottom-0 w-full bg-gradient-headover text-white z-40 transition-all duration-500 ${
           isExpanded ? "h-[45vh]" : "h-[7vh]"
         }`}
       >

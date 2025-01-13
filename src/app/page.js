@@ -9,14 +9,15 @@ import GridMenu from "./Components/GridMenu";
 import GridNew from "./Components/GridNew";
 import HeroShorts from "./Components/HeroShorts";
 import OffersNext from "./Components/OffersNext";
+import Combos from "./Components/Combos";
 
 export default function Home() {
   return (
     <div className="min-h-dvh snap-y snap-mandatory overflow-y-scroll h-dvh  ">
      
         
-        <Offres/>
-        <OffersNext/>
+      
+        <Combos/>
       
 
    

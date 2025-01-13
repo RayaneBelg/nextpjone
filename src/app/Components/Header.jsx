@@ -45,7 +45,14 @@ export default function Header() {
       <div className="flex justify-between items-center px-4 h-full">
         {/* Left Section */}
         <div className="w-1/3 flex justify-start">
-          <FaSquarePhone size={40} color="black" />
+        <button onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? (
+              <IoMdClose size={40} color="black" />
+            ) : (
+              <GiHamburgerMenu size={40} color="white" />
+            )}
+          </button>
+        
         </div>
 
         {/* Center Section */}
@@ -53,7 +60,7 @@ export default function Header() {
           <Link href="/">
             <img
               className={`${scrolled ? 'h-[5vh]' : 'h-[6vh]'}`}
-              src={scrolled ? '../../IconeBlack.png' : '../../Rosablack.png'}
+              src={scrolled ? '../../IconeBlack.png' : '../../RosaWhite.png'}
               alt="Hero Banner"
             />
           </Link>
@@ -61,13 +68,8 @@ export default function Header() {
 
         {/* Right Section */}
         <div className="w-1/3 flex justify-end">
-          <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? (
-              <IoMdClose size={40} color="black" />
-            ) : (
-              <GiHamburgerMenu size={40} color="black" />
-            )}
-          </button>
+        <FaSquarePhone size={40} color="white" />
+          
         </div>
       </div>
 
