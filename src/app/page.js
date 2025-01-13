@@ -8,6 +8,7 @@ import HarmonizedCta from "./Components/HarmonizedCta";
 import GridMenu from "./Components/GridMenu";
 import GridNew from "./Components/GridNew";
 import HeroShorts from "./Components/HeroShorts";
+import OffersNext from "./Components/OffersNext";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
      
         
         <Offres/>
+        <OffersNext/>
       
 
    

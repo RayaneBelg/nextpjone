@@ -4,7 +4,8 @@ import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 
-const galleryImages = Array(10).fill("../../../rosain.jpg");
+const urls = ["../../../rosain.jpg", "../../../herobann.jpg"];
+const galleryImages = Array.from({ length: 10 }, (_, index) => urls[index % urls.length]);
 
 export default function GallerySection() {
   const ref = useRef(null);
