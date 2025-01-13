@@ -60,7 +60,7 @@ export default function Header() {
           <Link href="/">
             <img
               className={`${scrolled ? 'h-[5vh]' : 'h-[6vh]'}`}
-              src={scrolled ? '../../IconeBlack.png' : '../../Rosaheader.png'}
+              src={scrolled ? '../../IconeBlack.png' : '../../rosaheader.png'}
               alt="Hero Banner"
             />
           </Link>
