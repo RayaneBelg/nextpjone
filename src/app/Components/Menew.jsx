@@ -17,7 +17,7 @@ export default function Menew() {
     filter === "all" ? menu : menu.filter((item) => item.type === filter);
 
   return (
-    <div className="flex flex-col h-dvh ">
+    <div className="flex flex-col h-dvh overflow-x-hidden">
 
 <div className="w-full flex gap-1 justify-around mt-[8vh]  ">
   {["Rosagal1.jpeg", "Rosagal2.jpeg", "Rosagal3.jpeg"].map((src, idx) => (
@@ -25,7 +25,7 @@ export default function Menew() {
       key={idx}
       src={src}
       alt={`Gallery ${idx + 1}`}
-      className=" max-w-[33.33%]  md:h-72 lg:h-96 object-cover shadow-md"
+      className=" max-w-[33.33%]  lg:h-72  object-cover shadow-md"
     />
   ))}
 </div>
