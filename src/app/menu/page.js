@@ -2,6 +2,7 @@
 import React from 'react'
 import GridMenu from '../Components/GridMenu'
 import {motion } from "framer-motion"
+import Menew from '../Components/Menew'
 
 export default function page() {
   return (
@@ -10,7 +11,8 @@ export default function page() {
     animate ={{opacity : 1}}
     transition={{delay : .8}}
     className='min-h-dvh'>
-      <GridMenu/>
+      
+      <Menew/>
     </motion.div>
   )
 }
