@@ -7,7 +7,7 @@ import { motion, AnimatePresence, delay } from "framer-motion";
 
 export default function Menew() {
   // State for filtering
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("poisson");
 
   // State for modal
   const [selectedItem, setSelectedItem] = useState(null);
@@ -19,17 +19,17 @@ export default function Menew() {
   return (
     <div className="flex flex-col h-dvh ">
 
-           {/* Gallery Section */}
-      <div className="  flex gap-2 justify-center mt-[8vh]">
-        {["Rosagal1.jpeg", "Rosagal2.jpeg", "Rosagal3.jpeg"].map((src, idx) => (
-          <img
-            key={idx}
-            src={src}
-            alt={`Gallery ${idx + 1}`}
-            className="w-24 h-24 object-cover shadow-md"
-          />
-        ))}
-      </div>
+<div className="w-full flex gap-1 justify-around mt-[8vh]  ">
+  {["Rosagal1.jpeg", "Rosagal2.jpeg", "Rosagal3.jpeg"].map((src, idx) => (
+    <img
+      key={idx}
+      src={src}
+      alt={`Gallery ${idx + 1}`}
+      className=" max-w-[33.33%]  md:h-72 lg:h-96 object-cover shadow-md"
+    />
+  ))}
+</div>
+
       {/* Filter Buttons */}
       <div className="flex flex-wrap justify-center items-center gap-3 p-4 ">
         {[
@@ -43,7 +43,7 @@ export default function Menew() {
         ].map((category, idx) => (
           <button
             key={idx}
-            className={`px-3 py-1 sm:px-4 sm:py-2 bg-black text-xs sm:text-sm md:text-base rounded font-extrabold text-white font-mono uppercase transition-transform hover:scale-105 ${
+            className={`px-3 py-1 sm:px-4 sm:py-2 bg-black text-xs sm:text-sm md:text-3xl rounded font-extrabold text-white font-westmeath uppercase transition-transform hover:scale-105 ${
               filter === category ? "bg-gray-700" : ""
             }`}
             onClick={() => setFilter(category)}
@@ -65,7 +65,7 @@ export default function Menew() {
             className="flex justify-between items-center border-b border-gray-300 pb-4"
           >
             <div>
-              <h2 className="text-xl font-bold font-mono text-black">
+              <h2 className="text-2xl font-bold font-westmeath text-black">
                 {item.nom}
               </h2>
               <p className="text-sm text-gray-600 font-mono">{item.description}</p>
@@ -74,7 +74,7 @@ export default function Menew() {
 
             {/* Plus Icon */}
             <button
-              className="p-2 bg-red-700 text-white rounded-full hover:bg-red-500 transition-all"
+              className="p-2 bg-red-700 text-white rounded-full hover:bg-red-400 active:bg-red-500 transition-all"
               onClick={() => setSelectedItem(item)}
             >
               <FaPlus />
@@ -91,25 +91,20 @@ export default function Menew() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+            className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 "
           >
             <motion.div
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full"
+              className="bg-white p-6 rounded-lg shadow-lg w-[80%] flex flex-col items-center"
             >
-              <button
-                className="absolute top-3 right-3 text-red-700 hover:text-red-500"
-                onClick={() => setSelectedItem(null)}
-              >
-                <FaTimes size={20} />
-              </button>
+             
 
               <img
                 src={selectedItem.src}
                 alt={selectedItem.nom}
-                className="w-full h-64 object-cover rounded-lg mb-4"
+                className=" object-cover h-[25vh] w-auto mb-4"
               />
 
               <h2 className="text-xl font-bold text-black mb-2">

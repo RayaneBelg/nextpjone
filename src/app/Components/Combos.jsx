@@ -96,7 +96,12 @@ export default function Combos() {
                   Découvrez nos offres spéciales pour {formule.formule}.
                 </p>
                
-                <FaPlus className=" text-2xl  text-red-700" />
+              <button
+                          className="p-2 bg-red-700 text-white rounded-full hover:bg-red-400 active:bg-red-500 transition-all"
+                          
+                        >
+                          <FaPlus />
+                        </button>
 
                 
               </motion.div>
