@@ -56,27 +56,28 @@ export default function GallerySection() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 lg:grid-cols-3 gap-2 w-[95%] sm:w-[90%] mb-4"
-        >
-          {galleryImages.slice(0, 5).map((src, index) => (
-            <motion.div
-              key={index}
-              className={`relative shadow-lg overflow-hidden ${
-                index === 0 ? "col-span-2" : ""
-              }`}
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.3 + 0.15 * index, duration: 0.8 }}
-              onClick={() => openLightbox(index)}
-            >
-              <img
-                src={src}
-                alt={`Gallery ${index + 1}`}
-                className="w-full h-[15vh] lg:h-[30vh] object-cover cursor-pointer"
-              />
-            </motion.div>
-          ))}
-        </motion.div>
+  className="grid grid-cols-2 lg:grid-cols-3 gap-2 w-[95%] sm:w-[90%] mb-4"
+>
+  {galleryImages.slice(0, 5).map((src, index) => (
+    <motion.div
+      key={index}
+      className={`relative shadow-lg overflow-hidden ${
+        index === 0 ? "col-span-2 lg:col-span-2" : ""
+      }`}
+      initial={{ opacity: 0 }}
+      animate={isInView ? { opacity: 1 } : {}}
+      transition={{ delay: 0.8 + 0.15 * index }}
+      onClick={() => openLightbox(index)}
+    >
+      <img
+        src={src}
+        alt={`Gallery ${index + 1}`}
+        className="w-full h-[20vh] sm:h-[25vh] lg:h-[30vh] object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
+      />
+    </motion.div>
+  ))}
+</motion.div>
+
 
         <Link href={`/menu`}>
             <button className=" px-6 py-2 bg-white  hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg xl:text-3xl font-bold uppercase  xl:block">

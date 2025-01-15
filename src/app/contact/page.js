@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope , FaChevronDown} from "react-icons/fa";
 import GallerySection from "../Components/GallerySection";
+import Showchef from "../Components/Showchef";
 
 export default function Contact() {
 
@@ -99,6 +100,7 @@ export default function Contact() {
 
 
       {/* Section 2: Reservation Details */}
+      <Showchef/>
        
     </div>
   );
