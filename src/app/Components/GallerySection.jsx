@@ -37,7 +37,7 @@ export default function GallerySection() {
     <div className="h-dvh snap-start bg-gray-100">
       <div
         ref={ref}
-        className="h-[calc(100%-theme(space.16)-theme(space.8))] flex flex-col justify-around items-center overflow-hidden p-6"
+        className="h-[calc(100%-theme(space.16)-theme(space.6))] flex flex-col justify-around items-center overflow-hidden p-6"
       >
         <motion.div
           initial={{ opacity: 0 }}
@@ -46,7 +46,7 @@ export default function GallerySection() {
           className="text-center pt-10 "
         >
           <h1 className="font-westmeath text-3xl  lg:text-5xl uppercase ">
-            La SAlle
+            Reserver le 1er étage
           </h1>
           <p className="text-sm sm:text-2xl font-mono font-bold mb-2">
             200m carré un cadre idéal pour vos evenements pros ou persos
@@ -56,7 +56,7 @@ export default function GallerySection() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 lg:grid-cols-3 gap-2 w-[95%] sm:w-[90%]"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-2 w-[95%] sm:w-[90%] mb-4"
         >
           {galleryImages.slice(0, 5).map((src, index) => (
             <motion.div
@@ -79,7 +79,7 @@ export default function GallerySection() {
         </motion.div>
 
         <Link href={`/menu`}>
-            <button className=" px-6 py-2 bg-white hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg xl:text-3xl font-bold uppercase  xl:block">
+            <button className=" px-6 py-2 bg-white  hover:bg-gray-200 text-black border-2 border-black rounded transition-all duration-300 text-sm lg:text-lg xl:text-3xl font-bold uppercase  xl:block">
               Nous appeller
             </button>
           </Link>
