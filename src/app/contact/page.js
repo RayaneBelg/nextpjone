@@ -15,7 +15,7 @@ export default function Contact() {
       {/* Section 1: Contact Details */}
       <div className="flex flex-col justify-center items-center snap-start h-dvh text-black relative ">
         {/* Content Wrapper with Adjusted Height */}
-        <div className=" border-2 h-[calc(100%-theme(space.16)-theme(space.6))] flex flex-col lg:flex-row justify-center items-center px-4">
+        <div className="  h-[calc(100%-theme(space.16)-theme(space.6))] flex flex-col lg:flex-row justify-center items-center px-4">
           {/* Left Content */}
           <motion.div
             initial={{ x: -50, opacity: 0 }}
@@ -100,7 +100,7 @@ export default function Contact() {
 
 
       {/* Section 2: Reservation Details */}
-      <Showchef/>
+      
        
     </div>
   );

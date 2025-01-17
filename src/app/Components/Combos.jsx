@@ -151,7 +151,7 @@ export default function Combos() {
                   {currentOffers[currentIndex].nom}
                 </h2>
                 <img
-                  src="../../fishnchips.png"
+                  src="../../6.jpg"
                   alt="Offer Image"
                   className="w-3/4 max-w-sm mx-auto my-4"
                 />

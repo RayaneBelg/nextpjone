@@ -22,29 +22,7 @@ export const menuOffers = [
         },
       ],
     },
-    {
-      formule: "Goûter",
-      offers: [
-        {
-          id: 4,
-          nom: "Pause Douceur",
-          description: "Une part de gâteau au chocolat fondant, accompagnée d'un latte ou chocolat chaud.",
-          prix: 7.0,
-        },
-        {
-          id: 5,
-          nom: "Pause Fruitée",
-          description: "Un smoothie aux fruits rouges, un muffin aux myrtilles et des biscuits faits maison.",
-          prix: 6.5,
-        },
-        {
-          id: 6,
-          nom: "Pause Épicée",
-          description: "Un chai latte, une part de tarte aux pommes caramélisées et un biscuit au gingembre.",
-          prix: 7.5,
-        },
-      ],
-    },
+   
     {
       formule: "Déjeuner",
       offers: [
@@ -65,6 +43,29 @@ export const menuOffers = [
           nom: "Menu Gourmand",
           description: "Un burger maison, des frites croustillantes et un dessert du jour.",
           prix: 16.0,
+        },
+      ],
+    },
+    {
+      formule: "Goûter",
+      offers: [
+        {
+          id: 4,
+          nom: "Pause Douceur",
+          description: "Une part de gâteau au chocolat fondant, accompagnée d'un latte ou chocolat chaud.",
+          prix: 7.0,
+        },
+        {
+          id: 5,
+          nom: "Pause Fruitée",
+          description: "Un smoothie aux fruits rouges, un muffin aux myrtilles et des biscuits faits maison.",
+          prix: 6.5,
+        },
+        {
+          id: 6,
+          nom: "Pause Épicée",
+          description: "Un chai latte, une part de tarte aux pommes caramélisées et un biscuit au gingembre.",
+          prix: 7.5,
         },
       ],
     },

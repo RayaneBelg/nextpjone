@@ -30,20 +30,21 @@ const menu = [
     },
     {
       id: 2,
-      nom: "Goûter",
-      description: "Une pause gourmande pour l'après-midi : une part de tarte maison, un cookie ou une madeleine, accompagné d'une boisson chaude ou d'un jus de fruits.",
-      prix: 6.0,
-      disponibilite: "Après-midi uniquement",
-      inclus: [["Croissant ou Pain au chocolat"] , ["jus de fruit au choix"] , ["café ou thé"]]
-    },
-    {
-      id: 3,
       nom: "Dejeuner",
       description: "Un repas équilibré pour le déjeuner : plat du jour au choix, une boisson et un dessert maison pour finir en beauté.",
       prix: 15.0,
       disponibilite: "Midi uniquement",
       inclus: [["Croissant ou Pain au chocolat"] , ["jus de fruit au choix"] , ["café ou thé"]]
     },
+    {
+      id: 3,
+      nom: "Goûter",
+      description: "Une pause gourmande pour l'après-midi : une part de tarte maison, un cookie ou une madeleine, accompagné d'une boisson chaude ou d'un jus de fruits.",
+      prix: 6.0,
+      disponibilite: "Après-midi uniquement",
+      inclus: [["Croissant ou Pain au chocolat"] , ["jus de fruit au choix"] , ["café ou thé"]]
+    },
+   
     {
       id: 4,
       nom: " Diner",
