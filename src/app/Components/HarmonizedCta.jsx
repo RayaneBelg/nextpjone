@@ -8,6 +8,12 @@ import { FaChevronDown } from "react-icons/fa";
 export default function HarmonizedCta() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" }); // Trigger animation when in view
+  const images = [
+    { id: 1, src: "../../plateone.jpg", alt: "Hero Banner 1" },
+    { id: 2, src: "../../plate5.jpg", alt: "Hero Banner 2" },
+    { id: 3, src: "../../plate4.jpg", alt: "Hero Banner 3" },
+    { id: 4, src: "../../plate7.jpg", alt: "Hero Banner 4" },
+  ];
 
   return (
     <div
@@ -18,35 +24,36 @@ export default function HarmonizedCta() {
       <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col lg:flex-row justify-center items-center mt-4">
         {/* Images Section */}
         <motion.div
+      initial={{ scale: 0.9, opacity: 0 }}
+      animate={isInView ? { scale: 1, opacity: 1 } : {}}
+      transition={{
+        duration: 0.8,
+        delay: 0.2,
+      }}
+      className="grid grid-cols-2 gap-1 px-4 mx-4 sm:w-[50%] sm:order-1 order-1"
+    >
+      {images.map((image, index) => (
+        <motion.div
+          key={image.id}
+          className="relative overflow-hidden group border-2 border-gray-200"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={isInView ? { scale: 1, opacity: 1 } : {}}
           transition={{
             duration: 0.8,
-            delay: 0.2,
+            delay: 0.2 + index * 0.1, // Stagger effect
           }}
-          className="grid grid-cols-2 gap-1  px-4 mx-4 sm:w-[50%] sm:order-1 order-1"
         >
           <img
-            className="sm:h-[30vh] sm:w-auto object-cover border-2 border-gray-200"
-            src="../../herobann.jpg"
-            alt="Hero Banner"
+            src={image.src}
+            alt={image.alt}
+            className="sm:h-[30vh] sm:w-auto object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out"
           />
-          <img
-            className="sm:h-[30vh]  object-cover border-2 border-gray-200"
-            src="../../herobann.jpg"
-            alt="Hero Banner"
-          />
-          <img
-            className="sm:h-[30vh]  object-cover border-2 border-gray-200"
-            src="../../herobann.jpg"
-            alt="Hero Banner"
-          />
-          <img
-            className="sm:h-[30vh]  object-cover border-2 border-gray-200"
-            src="../../herobann.jpg"
-            alt="Hero Banner"
-          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <p className="text-white text-sm sm:text-md font-medium">{image.alt}</p>
+          </div>
         </motion.div>
+      ))}
+    </motion.div>
 
         {/* Text Section */}
         <motion.div

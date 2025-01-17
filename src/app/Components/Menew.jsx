@@ -20,7 +20,7 @@ export default function Menew() {
     <div className="flex flex-col h-dvh overflow-x-hidden">
 
 <div className="grid grid-cols-3 gap-[1] justify-items-center w-full mt-[7vh]">
-  {["Rosagal1.jpeg", "Rosagal2.jpeg", "Rosagal3.jpeg"].map((src, idx) => (
+  {["plateone.jpg", "Rosagal1.jpeg" , "plate4.jpg", ].map((src, idx) => (
     <div
       key={idx}
       className="relative w-full h-48 overflow-hidden group"
