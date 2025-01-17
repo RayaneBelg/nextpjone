@@ -117,15 +117,15 @@ const menu = [
   export const flash = [
     {
       id : 1,
-      src : "../../burger.png",
+      src : "../../9.jpg",
     },
     {
       id : 2,
-      src : "../../steaks.png",
+      src : "../../10.jpg",
     },
     {
       id : 3,
-      src : "../../fishnchips.png",
+      src : "../../11.jpg",
     },
     
   ]
