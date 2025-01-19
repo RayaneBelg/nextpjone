@@ -8,48 +8,58 @@ export default function page() {
   return (
     <div className="h-dvh snap-y snap-mandatory overflow-y-auto">
        <GallerySection/>
-      <div className="flex flex-col justify-center items-center snap-start h-dvh  text-black bg-gradient-boldred relative">
+      <div className="flex flex-col justify-center items-center snap-start h-dvh  text-white bg-gradient-boldred relative">
             {/* Content Wrapper with Adjusted Height */}
-            <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col lg:flex-row justify-center items-center px-4">
-              {/* Left Content */}
-              <motion.div
-                initial={{ x: -50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                className="text-center lg:text-left lg:w-[50%] p-4 text-gray-200"
-              >
-                <h1 className="font-westmeath text-3xl lg:text-5xl uppercase mb-4 ">
-                Réserver le 1er étage
-                </h1>
-                <p className="text-sm sm:text-2xl font-mono font-bold">
-                Anniversaires, réunions, ou soirées privées—profitez d'un cadre
-            unique pour vos événements.
-                </p>
-                <button className="mt-6 px-6 py-2 hover:bg-black  text-gray-200 border-2 border-gray-200 rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">
-                  J'appelle
-                </button>
-              </motion.div>
-      
-              {/* Right Content */}
-              <motion.div
-                initial={{ x: 50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                className="lg:w-[50%] flex justify-center items-center"
-              >
-                <img
-                  className="h-[30vh] lg:h-[40vh] w-auto object-cover  shadow-lg border-2 border-gray-200"
-                  src="../../rosain.jpg"
-                  alt="About Rosa"
-                />
-              </motion.div>
-            </div>
-              {/* Scroll Down Animation */}
-                
-            
+            <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col justify-center items-center px-4">
+ 
+    <h2 className="font-westmeath text-2xl md:text-3xl lg:text-4xl uppercase text-center mb-4">
+      Options de privatisation
+    </h2>
 
-          </div>
+    {/* Responsive Cards Container */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 w-full">
+      {/* Option 1: Locaux */}
+      <div className="flex flex-col items-center text-center border border-white p-4 rounded-lg shadow-lg">
+        <h3 className="text-lg md:text-xl font-bold uppercase mb-2">
+          Locaux
+        </h3>
+        <p className="text-sm md:text-base mb-4">Profitez de l’espace seul.</p>
+        <span className="text-xl md:text-2xl font-bold">500€</span>
+      </div>
 
+      {/* Option 2: Locaux + ménage */}
+      <div className="flex flex-col items-center text-center border border-white p-4 rounded-lg shadow-lg">
+        <h3 className="text-lg md:text-xl font-bold uppercase mb-2">
+          Locaux + Ménage
+        </h3>
+        <p className="text-sm md:text-base mb-4">
+          Espace et service de nettoyage inclus.
+        </p>
+        <span className="text-xl md:text-2xl font-bold">750€</span>
+      </div>
+
+      {/* Option 3: Prestation complète */}
+      <div className="flex flex-col items-center text-center border border-white p-4 rounded-lg shadow-lg">
+        <h3 className="text-lg md:text-xl font-bold uppercase mb-2">
+          Prestation complète
+        </h3>
+        <p className="text-sm md:text-base mb-4">
+          Locaux, traiteur, et services complets.
+        </p>
+        <span className="text-xl md:text-2xl font-bold text-yellow-300">
+          Sur devis
+        </span>
+      </div>
+    </div>
+    <button className="mt-6 px-6 py-2 hover:bg-black text-gray-200 border-2 border-gray-200 rounded transition-all duration-300 text-sm md:text-base lg:text-lg font-bold uppercase">
+    J'appelle
+  </button>
+  
+
+  {/* Call to Action Button */}
+
+</div>
+</div>
      
      
       
