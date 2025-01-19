@@ -5,7 +5,7 @@ const menu = [
     { id: 3, type: "viande", plat: "plat chaud", nom: "Côtelette d'Agneau", description: "Côtelette d'agneau juteuse et savoureuse, servie avec un gratin dauphinois crémeux et une sauce au thym.", prix: 27.0, src: "../../rbryani.png" },
   
     // Poisson Section
-    { id: 4, type: "poisson", plat: "plat chaud", nom: "Filet de Saumon", description: "Filet de saumon cuit à la perfection, accompagné d'une purée de patates douces et d'une sauce citronnée aux herbes fraîches.", prix: 22.0, src: "../../rbryani.png" },
+    { id: 4, type: "poisson", plat: "plat chaud", nom: "Fish and chips", description: "Filet de saumon cuit à la perfection, accompagné d'une purée de patates douces et d'une sauce citronnée aux herbes fraîches.", prix: 12.0, src: "../../shoot2.jpg" },
     { id: 5, type: "poisson", plat: "entrée", nom: "Ceviche de Dorade", description: "Dorade fraîchement marinée au citron vert, avec des morceaux de coriandre, d'oignons rouges et une touche d'épices légères.", prix: 14.5, src: "../../rbryani.png" },
     { id: 6, type: "poisson", plat: "plat chaud", nom: "Bouillabaisse", description: "Bouillabaisse traditionnelle composée de divers poissons, fruits de mer et légumes, servie avec une rouille maison et des croûtons.", prix: 26.0, src: "../../rbryani.png" },
   
@@ -20,7 +20,7 @@ const menu = [
     { id: 12, type: "pizzas", plat: "plat chaud", nom: "Reine Gourmande", description: "Jambon savoureux, champignons frais, mozzarella et une touche d'origan sur une base de tomate maison.", prix: 13.5, src: "../../rbryani.png" },
   
     // Burgers Section
-    { id: 13, type: "burgers", plat: "plat chaud", nom: "Burger Classique", description: "Un steak de boeuf juteux, cheddar fondant, salade croquante, tomate fraîche et sauce maison.", prix: 11.5, src: "../../rbryani.png" },
+    { id: 13, type: "burgers", plat: "plat chaud", nom: "Rosa Burger ", description: "Un steak de boeuf juteux, cheddar fondant, salade croquante, tomate fraîche et sauce maison.", prix: 11.5, src: "../../shoot1.jpg" },
     { id: 14, type: "burgers", plat: "plat chaud", nom: "Chicken Burger", description: "Filet de poulet croustillant, mayonnaise légère, laitue croquante et une touche de paprika.", prix: 10.5, src: "../../rbryani.png" },
     { id: 15, type: "burgers", plat: "plat chaud", nom: "Veggie Burger", description: "Galette de légumes maison, fromage fondu, avocat frais et une sauce légère au yaourt.", prix: 12.0, src: "../../rbryani.png" },
   

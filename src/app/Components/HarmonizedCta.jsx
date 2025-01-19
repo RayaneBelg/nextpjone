@@ -9,10 +9,10 @@ export default function HarmonizedCta() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" }); // Trigger animation when in view
   const images = [
-    { id: 1, src: "../../plateone.jpg", alt: "Hero Banner 1" },
-    { id: 2, src: "../../plate5.jpg", alt: "Hero Banner 2" },
-    { id: 3, src: "../../plate4.jpg", alt: "Hero Banner 3" },
-    { id: 4, src: "../../plate7.jpg", alt: "Hero Banner 4" },
+    { id: 1, src: "../../shoot6.jpg", alt: "Entrecôte " },
+    { id: 2, src: "../../shoot8.jpg", alt: "Tarte aux pommes" },
+    { id: 3, src: "../../shoot12.jpg", alt: "Tiramisu" },
+    { id: 4, src: "../../shoot10.jpg", alt: "Croque Mr" },
   ];
 
   return (
