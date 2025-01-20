@@ -18,7 +18,7 @@ export default function Loader() {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
       <img
-        src="../../RosaWhite.png"
+        src="../../toquewhite1.png"
         alt="Loading..."
         className="animate-pulse  "
       />

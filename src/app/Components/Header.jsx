@@ -59,8 +59,8 @@ export default function Header() {
         <div className="my-2 flex justify-center">
           <Link href="/">
             <img
-              className={`${scrolled ? 'h-[5vh]' : 'h-[6vh]'}`}
-              src={scrolled ? '../../IconeWhite.png' : '../../rosaheader.png'}
+              className={`${scrolled ? 'h-[5vh]' : 'h-[8vh]'}`}
+              src={scrolled ? '../../IconeWhite.png' : '../../toquewhite3.png'}
               alt="Hero Banner"
             />
           </Link>
@@ -83,8 +83,8 @@ export default function Header() {
         >
           <div className="my-4 ">
             <img
-              className="h-[20vh]"
-              src="../../RosaWhite.png"
+              className="h-[25vh]"
+              src="../../toquewhite1.png"
               alt="Logo"
             />
           </div>

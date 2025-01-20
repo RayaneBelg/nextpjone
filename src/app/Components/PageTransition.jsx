@@ -29,7 +29,7 @@ export default function PageTransition() {
           className="fixed inset-0 z-50 bg-black origin-left"
         >
           <motion.img
-            src="../../RosaWhite.png"
+            src="../../toquewhite1.png"
             alt="Page Transition"
             className="absolute inset-0 m-auto "
             initial={{ opacity: 0, scale: 0.8 }}
