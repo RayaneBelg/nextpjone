@@ -16,12 +16,15 @@ export default function Loader() {
   if (!isLoading) return null; // If not loading, don't render the loader
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
+    <div className="fixed inset-0 flex items-center flex-col justify-center bg-black z-50">
       <img
         src="../../toquewhite1.png"
         alt="Loading..."
         className="animate-pulse  "
       />
+       <h1 className="font-westmeath text-3xl  lg:text-5xl uppercase  text-white">
+            Café - Restaurant
+          </h1>
     </div>
   );
 }

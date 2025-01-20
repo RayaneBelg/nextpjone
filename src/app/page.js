@@ -10,21 +10,21 @@ import GridNew from "./Components/GridNew";
 import HeroShorts from "./Components/HeroShorts";
 import OffersNext from "./Components/OffersNext";
 import Combos from "./Components/Combos";
+import Lesoffres from "./Components/LesOffres";
 
 export default function Home() {
   return (
     <div className="min-h-dvh snap-y snap-mandatory overflow-y-scroll h-dvh  ">
      
-        
+        <Lesoffres/>
       
-        <Combos/>
-      
+     
 
    
 
       
        <HarmonizedCta/>
-       <GridNew/>
+      
       
       
         <AboutCta/>

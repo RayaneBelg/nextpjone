@@ -81,12 +81,15 @@ export default function Header() {
           exit={{ opacity: 0 }}
           className="fixed inset-0 bg-black flex flex-col justify-around items-center z-50"
         >
-          <div className="my-4 ">
+          <div className="my-4  flex flex-col items-center">
             <img
               className="h-[25vh]"
               src="../../toquewhite1.png"
               alt="Logo"
             />
+              <h1 className="font-westmeath text-3xl  lg:text-5xl uppercase  text-white">
+            Café - Restaurant
+          </h1>
           </div>
           <button
             className="absolute top-4 right-4 text-white text-4xl"

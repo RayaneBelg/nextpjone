@@ -26,17 +26,20 @@ export default function PageTransition() {
           animate={{ x: "0%" }}     // Same here for consistency
           exit={{ x: "100%" }}      
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="fixed inset-0 z-50 bg-black origin-left"
+          className="fixed inset-0 z-50 bg-black origin-left flex flex-col justify-around items-center"
         >
           <motion.img
             src="../../toquewhite1.png"
             alt="Page Transition"
-            className="absolute inset-0 m-auto "
+            className=" inset-0 m-auto "
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           />
+           <h1 className="font-westmeath text-2xl  lg:text-5xl uppercase  text-white ">
+            4 Pl de l'abbé Pierre 69009
+          </h1>
         </motion.div>
       )}
     </AnimatePresence>

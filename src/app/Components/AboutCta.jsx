@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutCta() {
   return (
-    <div className="flex flex-col justify-center items-center snap-start h-dvh  text-black bg-gradient-boldred">
+    <div className="flex flex-col justify-center items-center snap-start h-dvh  text-black bg-gradient-softgray">
       {/* Content Wrapper with Adjusted Height */}
       <div className="h-[calc(100%-theme(space.16)-theme(space.12))] flex flex-col lg:flex-row justify-center items-center px-4">
         {/* Left Content */}
