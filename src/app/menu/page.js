@@ -3,6 +3,7 @@ import React from 'react'
 import GridMenu from '../Components/GridMenu'
 import {motion } from "framer-motion"
 import Menew from '../Components/Menew'
+import Lacarte from '../Components/Lacarte'
 
 export default function page() {
   return (
@@ -12,7 +13,7 @@ export default function page() {
     transition={{delay : .8}}
     className='min-h-dvh'>
       
-      <Menew/>
+      <Lacarte/>
     </motion.div>
   )
 }
