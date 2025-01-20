@@ -72,7 +72,7 @@ export default function GallerySection() {
       <img
         src={src}
         alt={`Gallery ${index + 1}`}
-        className="w-full h-[20vh] sm:h-[25vh] lg:h-[30vh] object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
+        className="w-full h-[15vh] sm:h-[25vh] lg:h-[30vh] object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
       />
     </motion.div>
   ))}
