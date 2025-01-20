@@ -1,18 +1,25 @@
 const menu = [
     // Viande Section
-    { id: 1, type: "viande", plat: "plat chaud", nom: "Entrecôte Grillée", description: "Entrecôte grillée juteuse accompagnée d'une sauce au poivre maison, servie avec une garniture de légumes de saison et de pommes de terre sautées.", prix: 25.5, src: "../../rbryani.png" },
-    { id: 2, type: "viande", plat: "entrée", nom: "Carpaccio de Boeuf", description: "Fines tranches de boeuf marinées, servies avec une salade de roquette, des copeaux de parmesan et un filet d'huile d'olive extra vierge.", prix: 12.0, src: "../../rbryani.png" },
-    { id: 3, type: "viande", plat: "plat chaud", nom: "Côtelette d'Agneau", description: "Côtelette d'agneau juteuse et savoureuse, servie avec un gratin dauphinois crémeux et une sauce au thym.", prix: 27.0, src: "../../rbryani.png" },
+    { id: 1, type: "viande", plat: "plat chaud", nom: "Entrecôte de boeuf", description: "Entrecôte grillée juteuse accompagnée d'une sauce au poivre maison, servie avec une salade et des frites maison", prix: 18, src: "../../shoot6.jpg" },
+    { id: 2, type: "viande", plat: "entrée", nom: "Assiette brochette", description: "Brochettes marinée accompagnée , servie avec une salade et des frites maison", prix: 12.0, src: "../../shoot4.jpg" },
+
+
+    { id: 3, type: "viande", plat: "plat chaud", nom: "Côtelettes d'Agneau", description: "Brochettes marinée accompagnée , servie avec une salade et des frites maison", prix: 18.0, src: "../../shoot4.jpg" },
+
+
+    { id: 19, type: "viande", plat: "plat chaud", nom: "Cordon bleu", description: "Cordon bleu maison , servie avec une salade et des frites maison", prix: 18.0, src: "../../shoot3.jpg" },
+
+
   
     // Poisson Section
-    { id: 4, type: "poisson", plat: "plat chaud", nom: "Fish and chips", description: "Filet de saumon cuit à la perfection, accompagné d'une purée de patates douces et d'une sauce citronnée aux herbes fraîches.", prix: 12.0, src: "../../shoot2.jpg" },
-    { id: 5, type: "poisson", plat: "entrée", nom: "Ceviche de Dorade", description: "Dorade fraîchement marinée au citron vert, avec des morceaux de coriandre, d'oignons rouges et une touche d'épices légères.", prix: 14.5, src: "../../rbryani.png" },
+    { id: 4, type: "poisson", plat: "plat chaud", nom: "Fish and chips", description: "Filet de cabillaud façon fish and chips, panure du chef et sauce tartare maison aux herbes fraîches servi avec frites maison", prix: 12.0, src: "../../shoot2.jpg" },
+    { id: 5, type: "poisson", plat: "entrée", nom: "Rosa Fish Burger", description: "Filet de cabillaud façon fish and chips, panure du chef et sauce tartare maison aux herbes fraîches servi avec frites maison ", prix: 14.5, src: "../../rbryani.png" },
     { id: 6, type: "poisson", plat: "plat chaud", nom: "Bouillabaisse", description: "Bouillabaisse traditionnelle composée de divers poissons, fruits de mer et légumes, servie avec une rouille maison et des croûtons.", prix: 26.0, src: "../../rbryani.png" },
   
     // Desserts Section
-    { id: 7, type: "dessert", plat: "dessert", nom: "Moelleux au Chocolat", description: "Moelleux au chocolat noir intense, avec un cœur fondant et servi avec une boule de glace à la vanille.", prix: 9.0, src: "../../rbryani.png" },
-    { id: 8, type: "dessert", plat: "dessert", nom: "Crème Brûlée", description: "Crème brûlée classique avec une fine croûte caramélisée et une subtile saveur de zeste d'orange pour une touche fruitée.", prix: 7.0, src: "../../rbryani.png" },
-    { id: 9, type: "dessert", plat: "dessert", nom: "Tartelette aux Fruits Rouges", description: "Pâte sablée croustillante garnie d'une crème pâtissière légère et d'un mélange de fruits rouges frais.", prix: 8.5, src: "../../rbryani.png" },
+    { id: 7, type: "dessert", plat: "dessert", nom: "Moelleux au Chocolat", description: "Moelleux au chocolat noir intense, avec un cœur fondant et servi avec une boule de glace à la vanille.", prix: 9.0, src: "../../shoot12.jpg" },
+    { id: 8, type: "dessert", plat: "dessert", nom: "Tiramisu", description: "Tiramisu classique  ou Speculoos", prix: 7.0, src: "../../shoot12.jpg" },
+    { id: 9, type: "dessert", plat: "dessert", nom: "Crumble aux Fruits Rouges", description: "Pâte sablée croustillante garnie d'une compotée de fruits rouges frais.", prix: 8.5, src: "../../shoot9.jpg" },
   
     // Pizzas Section
     { id: 10, type: "pizzas", plat: "plat chaud", nom: "Margherita Classique", description: "Base tomate fraîche, mozzarella fondante et basilic frais pour une pizza classique et irrésistible.", prix: 12.0, src: "../../rbryani.png" },
