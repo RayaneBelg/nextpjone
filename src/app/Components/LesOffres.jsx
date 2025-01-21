@@ -84,7 +84,7 @@ export default function Combos() {
         className="snap-center  card flex-shrink-0 w-80 xl:w-[30rem] border shadow-md text-center hover:shadow-lg transition-shadow cursor-pointer object-cover"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -50 }} // Exit animation
+         // Exit animation
         transition={{ duration: 0.5, delay: idx * 0.2 }}
       />
     ))}

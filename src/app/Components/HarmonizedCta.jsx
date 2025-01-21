@@ -30,12 +30,12 @@ export default function HarmonizedCta() {
         duration: 0.8,
         delay: 0.2,
       }}
-      className="grid grid-cols-2 gap-1 px-4 mx-4 sm:w-[50%] sm:order-1 order-1"
+      className="grid grid-cols-2 gap-1 px-4 mx-4  sm:order-1 order-1"
     >
       {images.map((image, index) => (
         <motion.div
           key={image.id}
-          className="relative overflow-hidden group border-2 border-gray-200"
+          className="relative overflow-hidden group "
           initial={{ scale: 0.9, opacity: 0 }}
           animate={isInView ? { scale: 1, opacity: 1 } : {}}
           transition={{
@@ -46,10 +46,10 @@ export default function HarmonizedCta() {
           <img
             src={image.src}
             alt={image.alt}
-            className="sm:h-[30vh] sm:w-auto object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out"
+            className="sm:h-[30vh] w-full border-2 border-gray-200 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-            <p className="text-white text-sm sm:text-md font-medium">{image.alt}</p>
+            <p className="text-white text-lg md:text-2xl font-westmeath">{image.alt}</p>
           </div>
         </motion.div>
       ))}
@@ -66,7 +66,7 @@ export default function HarmonizedCta() {
             La Carte
           </h1>
           <p className="text-sm sm:text-2xl font-mono font-bold">
-            Des produits frais, locaux et soigneusement sélectionnés pour vous offrir des saveurs authentiques et des plats d’exception. Découvrez une cuisine qui allie tradition et modernité.
+            Des produits frais, locaux et soigneusement sélectionnés pour vous offrir des saveurs authentiques et des plats de brasserie réconfortants avec une pointe de modernité.
           </p>
           <Link href={`/menu`}>
             <button className="mt-6 px-6 py-2 hover:bg-black  text-gray-200 border-2 border-gray-200 rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">
