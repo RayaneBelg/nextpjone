@@ -20,7 +20,7 @@ export default function AboutCta() {
             Bienvenue au Rosa
           </h1>
           <p className="text-sm sm:text-2xl font-mono font-bold">
-          Situé au cœur de Lyon, Le Rosa est bien plus qu’un simple restaurant. C’est un espace de partage qui est mis à votre disposition pour vos evenements privés 
+          Situé au cœur de Lyon, Le Rosa est  plus qu’un  restaurant. C’est un espace de partage qui est mis à votre disposition pour vos evenements privés 
           </p>
           <Link href={"/events"}>
           <button className="mt-6 px-6 py-2 bg-black  text-gray-200 border-2 border-gray-200 rounded transition-all duration-300 text-sm lg:text-lg font-bold uppercase">
@@ -38,7 +38,7 @@ export default function AboutCta() {
         >
           <img
             className="h-[30vh] lg:h-[40vh] w-auto object-cover  shadow-lg border-2 border-gray-200"
-            src="../../rosagal5.jpeg"
+            src="../../Rosagal5.jpeg"
             alt="About Rosa"
           />
         </motion.div>

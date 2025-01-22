@@ -1,15 +1,15 @@
 const formule = [
     {
       type: "Petit Dej",
-      images: ["../../6.jpg", "../../9.jpg", "../../8.jpg"],
+      images: ["../../plan7.jpg", "../../plan8.jpg", "../../plan12.jpg"],
     },
     {
       type: "Plats Chauds",
-      images: ["../../10.jpg", "../../11.jpg", "../../8.jpg"],
+      images: ["../../plan9.jpg", "../../plan10.jpg", "../../plan11.jpg"],
     },
     {
       type: "Gouters",
-      images: ["../../6.jpg", "../../9.jpg", "../../8.jpg"],
+      images: ["../../plan13.jpg", "../../plan14.jpg", "../../plan15.jpg"],
     },
   ];
   
