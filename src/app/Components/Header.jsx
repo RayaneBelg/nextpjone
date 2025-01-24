@@ -68,7 +68,9 @@ export default function Header() {
 
         {/* Right Section */}
         <div className="w-1/3 flex justify-end">
+        <Link href="tel:0478838746">
         <FaSquarePhone size={40} color="white" />
+        </Link>
           
         </div>
       </div>

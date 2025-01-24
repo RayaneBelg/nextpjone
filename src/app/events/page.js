@@ -23,8 +23,8 @@ export default function page() {
         <h3 className="text-lg md:text-xl font-bold uppercase mb-2">
           Locaux
         </h3>
-        <p className="text-sm md:text-base mb-4">Profitez de l’espace seul.</p>
-        <span className="text-xl md:text-2xl font-bold">500€</span>
+        <p className="text-sm md:text-base mb-4">Mise à disposition de la salle</p>
+        <span className="text-xl md:text-2xl font-bold">__€</span>
       </div>
 
       {/* Option 2: Locaux + ménage */}
@@ -33,9 +33,9 @@ export default function page() {
           Locaux + Ménage
         </h3>
         <p className="text-sm md:text-base mb-4">
-          Espace et service de nettoyage inclus.
+          Salle et service de nettoyage inclus.
         </p>
-        <span className="text-xl md:text-2xl font-bold">750€</span>
+        <span className="text-xl md:text-2xl font-bold">__€</span>
       </div>
 
       {/* Option 3: Prestation complète */}
@@ -44,7 +44,7 @@ export default function page() {
           Prestation complète
         </h3>
         <p className="text-sm md:text-base mb-4">
-          Locaux, traiteur, et services complets.
+          Locaux, traiteur, et service complet.
         </p>
         <span className="text-xl md:text-2xl font-bold text-yellow-300">
           Sur devis

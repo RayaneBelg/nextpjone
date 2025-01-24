@@ -55,7 +55,7 @@ export default function Combos() {
             key={category}
             className={`px-4 py-2 text-sm md:text-lg font-bold rounded transition-all 
           uppercase font-westmeath hover:scale-105 ${
-              filter === category ? "bg-red-500" : "bg-black text-gray-300"
+              filter === category ? "bg-gradient-headover text-gray-50" : "bg-black text-gray-300"
             } hover:bg-red-600 transition-all duration-300`}
             onClick={() => setFilter(category)}
           >

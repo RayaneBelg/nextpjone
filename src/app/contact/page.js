@@ -27,7 +27,7 @@ export default function Contact() {
              où nous trouver ?
             </h1>
             <p className="text-sm sm:text-2xl font-mono font-bold mb-2">
-              Nous sommes ouverts tous les jours de 7:00 à 23:00
+              du Lundi au Vendredi de 7:00 à 23:00
             </p>
 
             {/* Contact Details */}
@@ -53,7 +53,7 @@ export default function Contact() {
                     Nous appeler
                   </h2>
                   <p className="text-black text-sm lg:text-lg">
-                    +1 (123) 456-7890
+                    0478838746
                   </p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                 <div>
                   <h2 className="text-sm lg:text-xl font-semibold">Email</h2>
                   <p className="text-black text-sm lg:text-lg">
-                    info@rosacuisine.fr
+                    contact@rosacuisine.fr
                   </p>
                 </div>
               </div>

@@ -31,7 +31,9 @@ export default function Footer() {
         {/* Header with Icons */}
         <div className="flex justify-between items-center px-4 py-2 h-[7vh]">
           {/* Instagram Icon */}
+          <Link href="https://www.instagram.com/rosafood69009/">
           <FaInstagram size={30} className="text-white" />
+          </Link>
 
           {/* Centered Logo */}
           <Link href="/">
@@ -78,7 +80,7 @@ export default function Footer() {
               <FaPhoneAlt size={24} className="text-slate-200" />
               <div>
                 <h2 className="font-semibold uppercase">Nous Appeler</h2>
-                <p>+1 (123) 456-7890</p>
+                <p>0478838746</p>
               </div>
             </div>
 
