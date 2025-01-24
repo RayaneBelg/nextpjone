@@ -8,7 +8,7 @@ import MenuList from "./MenuList";
 
 export default function Lacarte() {
   // State for filtering
-  const [filter, setFilter] = useState("poisson");
+  const [filter, setFilter] = useState("all");
 
   // State for selected menu item
   const [selectedItem, setSelectedItem] = useState(null);
@@ -23,12 +23,12 @@ export default function Lacarte() {
   // Map of filters to image sets
   const filterImageMap = {
     all: ["shoot1.jpg", "Rosagal1.jpeg", "shoot2.jpg"],
-    viande: ["shoot3.jpg", "shoot4.jpg", "shoot6.jpg"],
-    poisson: ["shoot2.jpg", "shoot1.jpg", "shoot12.jpg"],
+    viande: ["shoot6.jpg", "Rosagal5.jpeg", "shoot3.jpg"],
+    poisson: ["shoot2.jpg", "Rosagal3.jpeg", "shoot2.jpg"],
     dessert: ["shoot9.jpg", "shoot12.jpg", "shoot8.jpg"],
     pizzas: ["shoot8.jpg", "shoot3.jpg", "shoot4.jpg"],
-    burgers: ["shoot1.jpg", "shoot2.jpg", "shoot9.jpg"],
-    salades: ["shoot4.jpg", "shoot3.jpg", "shoot6.jpg"],
+    burgers: ["shoot1.jpg", "Rosagal4.jpeg", "shoot7.jpg"],
+    salades: ["shoot13.jpg", "Rosagal2.jpeg", "shoot13.jpg"],
   };
 
   // Update active images whenever the filter changes

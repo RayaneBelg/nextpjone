@@ -7,7 +7,7 @@ import { motion, AnimatePresence, delay } from "framer-motion";
 
 export default function Menew() {
   // State for filtering
-  const [filter, setFilter] = useState("poisson");
+  const [filter, setFilter] = useState("all");
 
   // State for modal
   const [selectedItem, setSelectedItem] = useState(null);

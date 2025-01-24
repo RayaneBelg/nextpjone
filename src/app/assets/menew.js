@@ -38,9 +38,9 @@ const menu = [
     { id: 15, type: "burgers", plat: "plat chaud", nom: "Sandwich Baguette", description: "Baguette entière , viande au choix , frites maison , crudités", prix: 9.0, src: "../../shoot7.jpg" },
   
     // Salades Section
-    { id: 16, type: "salades", plat: "entrée", nom: "Salade César", description: "Mélange de laitue romaine croquante, poulet grillé, croûtons dorés et une sauce césar crémeuse, garnie de copeaux de parmesan.", prix: 9.5, src: "../../rbryani.png" },
-    { id: 17, type: "salades", plat: "entrée", nom: "Salade Niçoise", description: "Thon, olives noires, œufs durs, haricots verts croquants et pommes de terre servies sur un lit de salade fraîche.", prix: 10.0, src: "../../rbryani.png" },
-    { id: 18, type: "salades", plat: "entrée", nom: "Salade Végétarienne", description: "Un mélange coloré de légumes frais, quinoa, graines croquantes et une vinaigrette légère au citron.", prix: 8.5, src: "../../rbryani.png" },
+    { id: 16, type: "salades", plat: "entrée", nom: "Salade César", description: "Mélange de laitue romaine croquante, poulet grillé, croûtons dorés et une sauce césar crémeuse, garnie de copeaux de parmesan.", prix: 9.5, src: "../../shoot13.jpg" },
+    { id: 17, type: "salades", plat: "entrée", nom: "Salade Niçoise", description: "Thon, olives noires, œufs durs, haricots verts croquants et pommes de terre servies sur un lit de salade fraîche.", prix: 10.0, src: "../../shoot13.jpg" },
+    { id: 18, type: "salades", plat: "entrée", nom: "Salade Végétarienne", description: "Un mélange coloré de légumes frais, quinoa, graines croquantes et une vinaigrette légère au citron.", prix: 8.5, src: "../../shoot13.jpg" },
 
     //pdj
 

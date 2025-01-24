@@ -25,6 +25,9 @@ export default function Loader() {
        <h1 className="font-westmeath text-3xl  lg:text-5xl uppercase  text-white">
             Café - Restaurant
           </h1>
+          <h1 className="font-westmeath text-2xl  lg:text-5xl uppercase  text-white my-4 ">
+            4 Pl de l'abbé Pierre 69009
+          </h1>
     </div>
   );
 }
