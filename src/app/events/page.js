@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope , FaChevronDown} from "react-icons/fa";
 import GallerySection from "../Components/GallerySection";
+import Link from 'next/link';
 
 export default function page() {
   return (
@@ -51,9 +52,13 @@ export default function page() {
         </span>
       </div>
     </div>
+    <Link href="tel:0478838746">
+    
     <button className="mt-6 px-6 py-2 hover:bg-black text-gray-200 border-2 border-gray-200 rounded transition-all duration-300 text-sm md:text-base lg:text-lg font-bold uppercase">
     J'appelle
   </button>
+
+  </Link>
   
 
   {/* Call to Action Button */}
