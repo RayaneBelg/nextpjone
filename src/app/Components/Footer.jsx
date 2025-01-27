@@ -47,9 +47,9 @@ export default function Footer() {
           {/* Toggle Arrow */}
           <span onClick={toggleFooter} className="cursor-pointer">
             {isExpanded ? (
-              <FaChevronDown size={30} className="text-white" />
+              <FaChevronDown size={40} className="text-white" />
             ) : (
-              <FaChevronUp size={30} className="text-white" />
+              <FaChevronUp size={40} className="text-white" />
             )}
           </span>
         </div>

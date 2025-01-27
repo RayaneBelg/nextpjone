@@ -27,13 +27,14 @@ export default function Combos() {
         {/* Video Section */}
         <motion.div
           ref={videoRef}
-          initial={{ scaleY: 0, opacity: 0 }}
-          animate={isVideoInView ? { scaleY: 1, opacity: 1 } : {}}
+          initial={{  opacity: 0 }}
+          animate={isVideoInView ? {  opacity: 1 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex-shrink-0 w-full origin-top"
         >
-          <video
-            className="h-[10vh] sm:h-[25vh] w-full object-cover object-bottom"
+         {/* */}
+         <video
+            className="h-[10vh] sm:h-[20vh] w-full object-cover object-bottom"
             src="../../head.mov"
             autoPlay
             loop
@@ -42,9 +43,11 @@ export default function Combos() {
           >
             Your browser does not support the video tag.
           </video>
+
+          
         </motion.div>
 
-        {/* Content Section */}
+        {/*  <img className=" h-[10vh] sm:h-[25vh] w-full object-bottom object-cover " src="../../bantry.png"/>*/}
         <div className="flex flex-col justify-center items-center px-2">
           <h1 className="font-westmeath uppercase text-2xl xl:text-6xl my-2">
             Nos Formules

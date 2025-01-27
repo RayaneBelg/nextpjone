@@ -8,7 +8,7 @@ export default function Loader() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500); // Loader disappears after 2 seconds
+    }, 750); // Loader disappears after 2 seconds
 
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);

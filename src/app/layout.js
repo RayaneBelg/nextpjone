@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
         className="p-0 bg-gradient-body  "
       >
       <Header/>
-      <PageTransition/>
+     
       
-      <Loader/>
+    <Loader/>
     
         {children}
         <Footer/>

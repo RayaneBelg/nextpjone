@@ -1,7 +1,7 @@
 const formule = [
     {
       type: "Petit Dej",
-      images: ["../../plan7.jpg", "../../plan8.jpg", "../../plan12.jpg"],
+      images: ["../../plan6.jpg", "../../plan7.jpg", "../../plan8.jpg"],
     },
     {
       type: "Plats Chauds",
