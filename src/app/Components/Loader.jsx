@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Loader() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,10 +18,10 @@ export default function Loader() {
 
   return (
     <div className="fixed inset-0 flex items-center flex-col justify-center bg-black z-50">
-      <img
-        src="../../toquewhite1.png"
+       <img
+        src="../toquewhite3.png"
         alt="Loading..."
-        className="animate-pulse  "
+        className="animate-pulse"
       />
        <h1 className="font-westmeath text-3xl  lg:text-5xl uppercase  text-white">
             Café - Restaurant
