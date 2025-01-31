@@ -9,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 import formule from "../assets/formule";
 
 export default function Combos() {
-    const [filter, setFilter] = useState("Petit Dej");
+    const [filter, setFilter] = useState("Plats Chauds");
     const activeImages =
     formule.find((category) => category.type === filter)?.images || [];
   const videoRef = useRef(null);

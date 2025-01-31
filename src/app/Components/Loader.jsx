@@ -9,7 +9,7 @@ export default function Loader() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 750); // Loader disappears after 2 seconds
+    }, 1000); // Loader disappears after 2 seconds
 
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
@@ -21,7 +21,7 @@ export default function Loader() {
        <img
         src="../toquewhite3.png"
         alt="Loading..."
-        className="animate-pulse"
+       
       />
        <h1 className="font-westmeath text-3xl  lg:text-5xl uppercase  text-white">
             Café - Restaurant
