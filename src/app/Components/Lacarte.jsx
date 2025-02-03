@@ -26,7 +26,7 @@ export default function Lacarte() {
     viande: ["shoot6.jpg", "Rosagal5.jpeg", "shoot3.jpg"],
     poisson: ["shoot2.jpg", "Rosagal3.jpeg", "shoot2.jpg"],
     dessert: ["shoot9.jpg", "shoot12.jpg", "shoot8.jpg"],
-    pizzas: ["shoot8.jpg", "shoot3.jpg", "shoot4.jpg"],
+    pizzas: ["Rosagal3.jpeg", "Rosagal5.jpeg", "Rosagal2.jpeg"],
     burgers: ["shoot1.jpg", "Rosagal4.jpeg", "shoot7.jpg"],
     salades: ["shoot13.jpg", "Rosagal2.jpeg", "shoot13.jpg"],
   };

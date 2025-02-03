@@ -8,7 +8,7 @@ export default function MenuList({ filteredMenu }) {
   const [selectedItem, setSelectedItem] = useState(null);
 
   return (
-    <div className="flex flex-col gap-4 p-4 lg:p-12">
+    <div className="flex flex-col gap-4 p-4 lg:p-12 mb-12 md:mb-24">
       {/* Menu Items */}
       <AnimatePresence>
         {filteredMenu.map((item, idx) => (

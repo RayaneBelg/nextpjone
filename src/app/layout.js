@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
 import PageTransition from "./Components/PageTransition";
+import {GoogleTagManager} from "@next/third-parties/google"
 
 
 const westmeath = localFont({
@@ -16,8 +17,10 @@ const westmeath = localFont({
 
  
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en" className={`${westmeath.variable}`}>
+     <GoogleTagManager gtmId="G-HBWNJFTY9D"/>
         <body
         className="p-0 bg-gradient-body  "
       >
