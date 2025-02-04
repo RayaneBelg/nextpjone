@@ -1,11 +1,13 @@
 import localFont from "next/font/local";
 
+
 import "./globals.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
 import PageTransition from "./Components/PageTransition";
 import {GoogleTagManager} from "@next/third-parties/google"
+import CookieBanner from "./Components/CookieBanner";
 
 
 const westmeath = localFont({
@@ -30,6 +32,7 @@ export default function RootLayout({ children }) {
     <Loader/>
     
         {children}
+        <CookieBanner/>
         <Footer/>
       </body>
      
