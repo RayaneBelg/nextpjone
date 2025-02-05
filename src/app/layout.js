@@ -10,6 +10,7 @@ import {GoogleTagManager} from "@next/third-parties/google"
 import CookieBanner from "./Components/CookieBanner";
 
 
+
 const westmeath = localFont({
   src: "../../public/fonts/Westmeath.ttf",
   weight: "700",
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en" className={`${westmeath.variable}`}>
-     <GoogleTagManager gtmId="G-HBWNJFTY9D"/>
+     <GoogleTagManager gtmId={process.env.GMTK}/>
         <body
         className="p-0 bg-gradient-body  "
       >

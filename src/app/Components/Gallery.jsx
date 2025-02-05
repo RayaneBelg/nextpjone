@@ -43,7 +43,7 @@ export default function Gallery({ activeImages }) {
         {displayImages.map((src, idx) => (
           <motion.div
             key={src + idx} // Ensure unique keys
-            className="relative w-full h-48 sm:h-72 lg:h-96 overflow-hidden group"
+            className="relative w-full h-48 lg:h-72  overflow-hidden group"
             variants={itemVariants} // Apply item variants
           >
             <img

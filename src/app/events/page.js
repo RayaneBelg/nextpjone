@@ -25,7 +25,7 @@ export default function page() {
           Locaux
         </h3>
         <p className="text-sm md:text-base mb-4">Mise à disposition de la salle</p>
-        <span className="text-xl md:text-2xl font-bold">__€</span>
+        <span className="text-xl md:text-2xl font-bold"> Sur devis</span>
       </div>
 
       {/* Option 2: Locaux + ménage */}
@@ -36,7 +36,7 @@ export default function page() {
         <p className="text-sm md:text-base mb-4">
           Salle et service de nettoyage inclus.
         </p>
-        <span className="text-xl md:text-2xl font-bold">__€</span>
+        <span className="text-xl md:text-2xl font-bold"> Sur devis</span>
       </div>
 
       {/* Option 3: Prestation complète */}
