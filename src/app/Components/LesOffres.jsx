@@ -49,9 +49,14 @@ export default function Combos() {
 
         {/*  <img className=" h-[10vh] sm:h-[25vh] w-full object-bottom object-cover " src="../../bantry.png"/>*/}
         <div className="flex flex-col justify-center items-center px-2">
-          <h1 className="font-westmeath uppercase text-2xl xl:text-6xl my-2">
+          <div className="relative">
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 h-12 w-2 bg-gradient-headover"></div>
+          <h1 className="font-westmeath uppercase text-2xl xl:text-6xl my-2 pl-6">
             Nos Formules
           </h1>
+
+          </div>
+        
           <div className="flex gap-4 mb-6">
         {["Petit Dej", "Plats Chauds", "Gouters"].map((category) => (
           <button

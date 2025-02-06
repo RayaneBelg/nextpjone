@@ -6,7 +6,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
 import PageTransition from "./Components/PageTransition";
-import {GoogleTagManager} from "@next/third-parties/google"
+import {GoogleTagManager } from "@next/third-parties/google"
 import CookieBanner from "./Components/CookieBanner";
 
 
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en" className={`${westmeath.variable}`}>
-     <GoogleTagManager gtmId={process.env.GMTK}/>
+    
         <body
         className="p-0 bg-gradient-body  "
       >
