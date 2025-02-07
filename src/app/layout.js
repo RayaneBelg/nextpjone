@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         <body
         className="p-0 bg-gradient-body  "
       >
+        <GoogleTagManager gtmId="G-HBWNJFTY9D"/>
       <Header/>
      
       
