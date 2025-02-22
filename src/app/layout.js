@@ -20,6 +20,7 @@ const westmeath = localFont({
 
  
 export default function RootLayout({ children }) {
+  console.log("GTM ID:", process.env.NEXT_PUBLIC_GTM_ID);
   
   return (
     <html lang="en" className={`${westmeath.variable}`}>
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
         <body
         className="p-0 bg-gradient-body  "
       >
-        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID}/>
+       <GoogleTagManager gtmId="G-HBWNJFTY9D" />
       <Header/>
      
       

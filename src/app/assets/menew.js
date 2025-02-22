@@ -9,7 +9,7 @@ const menu = [
 
     { id: 19, type: "viande", plat: "plat chaud", nom: "Cordon bleu maison", description: "Cordon bleu maison , servie avec une salade et des frites maison", prix: 12.0, src: "../../shoot3.jpg" },
 
-    { id: 20, type: "viande", plat: "plat chaud", nom: "Côtes de veau", description: "Côtes de veau cuisson au choix ,  servie avec une salade et des frites maison", prix: 18.0, src: "../../na.jpg" },
+    { id: 20, type: "viande", plat: "plat chaud", nom: "Côtes de veau", description: "Côtes de veau cuisson au choix ,  servie avec une salade et des frites maison", prix: 24.0, src: "../../na.jpg" },
 
    
 
@@ -71,18 +71,18 @@ const menu = [
     popularite: "💵 Petit prix Rosa", },
   
     // Salades Section
-    { id: 16, type: "salades", plat: "entrée", nom: "Salade César", description: "Mélange de laitue romaine croquante, poulet grillé, croûtons dorés et une sauce césar crémeuse, garnie de copeaux de parmesan.", prix: 9.5, src: "../../shoot13.jpg" },
-    { id: 17, type: "salades", plat: "entrée", nom: "Salade Niçoise", description: "Thon, olives noires, œufs durs, haricots verts croquants et pommes de terre servies sur un lit de salade fraîche.", prix: 10.0, src: "../../shoot13.jpg" },
-    { id: 18, type: "salades", plat: "entrée", nom: "Salade Végétarienne", description: "Un mélange coloré de légumes frais, quinoa, graines croquantes et une vinaigrette légère au citron.", prix: 8.5, src: "../../shoot13.jpg" },
+    { id: 16, type: "salades", plat: "entrée", nom: "Salade César", description: "Mélange de laitue romaine croquante, poulet grillé, croûtons dorés et une sauce césar crémeuse, garnie de copeaux de parmesan.", prix: 7, src: "../../shoot13.jpg" },
+    { id: 17, type: "salades", plat: "entrée", nom: "Salade Niçoise", description: "Thon, olives noires, œufs durs, haricots verts croquants et pommes de terre servies sur un lit de salade fraîche.", prix: 7, src: "../../shoot13.jpg" },
+    { id: 18, type: "salades", plat: "entrée", nom: "Salade Végétarienne", description: "Un mélange coloré de légumes frais, quinoa, graines croquantes et une vinaigrette légère au citron.", prix: 7, src: "../../shoot13.jpg" },
 
     //pdj
 
-    { id: 23, type: "chef", plat: "plat du jour", nom: "Lasagnes", description: "Des couches de pâtes fraîches, une sauce béchamel maison, du bœuf haché savamment épicé, le tout gratiné à la perfection. Un classique réconfortant.", prix: 9.5, src: "../../na.jpg" },
-    { id: 24, type: "chef", plat: "plat du jour", nom: "Gratin dauphinois", description: "Pommes de terre fondantes dans une sauce crémeuse à l'ail et au fromage, cuites doucement au four pour une croûte dorée irrésistible.", prix: 10.0, src: "../../na.jpg" },
-    { id: 25, type: "chef", plat: "plat du jour", nom: "émincé de boeuf sauf poivre", description: "Des morceaux tendres de bœuf, nappés d'une sauce  au poivre, un plat savoureux et délicatement relevé.", prix: 8.5, src: "../../na.jpg" },
+    { id: 23, type: "chef", plat: "plat du jour", nom: "Lasagnes", description: "Des couches de pâtes fraîches, une sauce béchamel maison, du bœuf haché savamment épicé, le tout gratiné à la perfection. Un classique réconfortant.", prix: 12, src: "../../na.jpg" },
+    { id: 24, type: "chef", plat: "plat du jour", nom: "Gratin dauphinois", description: "Pommes de terre fondantes dans une sauce crémeuse à l'ail et au fromage, cuites doucement au four pour une croûte dorée irrésistible.", prix: 12, src: "../../na.jpg" },
+    { id: 25, type: "chef", plat: "plat du jour", nom: "émincé de boeuf sauf poivre", description: "Des morceaux tendres de bœuf, nappés d'une sauce  au poivre, un plat savoureux et délicatement relevé.", prix: 12, src: "../../na.jpg" },
 
-    { id: 26, type: "chef", plat: "plat du jour", nom: "Poulet basquaise", description: "Des morceaux de poulet mijotés aux épices, avec des poivrons, tomates et oignons, servi avec du riz", prix: 9.5, src: "../../na.jpg" },
-    { id: 27, type: "chef", plat: "plat du jour", nom: "Chili con carne", description: "Un mélange épicé de bœuf haché, haricots rouges et tomates, mijoté lentement pour un goût riche et piquant, servi avec du riz.", prix: 10.0, src: "../../na.jpg" },
-    { id: 28, type: "chef", plat: "plat du jour", nom: "Parmentier Poulet", description: "Du poulet tendre en sauce, recouvert d'une purée de pommes de terre onctueuse, puis gratiné pour un résultat fondant et réconfortant.", prix: 8.5, src: "../../na.jpg" }
+    { id: 26, type: "chef", plat: "plat du jour", nom: "Poulet basquaise", description: "Des morceaux de poulet mijotés aux épices, avec des poivrons, tomates et oignons, servi avec du riz", prix: 12, src: "../../na.jpg" },
+    { id: 27, type: "chef", plat: "plat du jour", nom: "Chili con carne", description: "Un mélange épicé de bœuf haché, haricots rouges et tomates, mijoté lentement pour un goût riche et piquant, servi avec du riz.", prix: 12, src: "../../na.jpg" },
+    { id: 28, type: "chef", plat: "plat du jour", nom: "Parmentier Poulet", description: "Du poulet tendre en sauce, recouvert d'une purée de pommes de terre onctueuse, puis gratiné pour un résultat fondant et réconfortant.", prix: 12, src: "../../na.jpg" }
   ];
   export default menu 
