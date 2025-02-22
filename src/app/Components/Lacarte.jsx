@@ -5,6 +5,7 @@ import menu from "../assets/menew";
 import Gallery from "./Gallery";
 import MenuFilter from "./MenuFilter";
 import MenuList from "./MenuList";
+import ListPlats from "./ListPlats";
 
 export default function Lacarte() {
   // State for filtering
@@ -49,10 +50,9 @@ export default function Lacarte() {
       <MenuFilter filter={filter} setFilter={setFilter} />
 
       {/* Menu List Component */}
-      <MenuList
-        filteredMenu={filteredMenu}
-        setSelectedItem={setSelectedItem}
-      />
+    
+      <ListPlats  filteredMenu={filteredMenu}
+        setSelectedItem={setSelectedItem}/>
 
       {/* Modal for Selected Item */}
       {selectedItem && (
