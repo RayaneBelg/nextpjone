@@ -86,7 +86,7 @@ export default function BonsPlans() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.3 }}
-                className="relative w-[95%] md:w-[50%] lg:w-[25%]  flex-shrink-0 snap-center bg-white rounded-lg shadow-lg overflow-hidden h-[max-content]"
+                className="relative w-[95%] md:w-[50%] lg:w-[25%]  flex-shrink-0 snap-center bg-white rounded-lg shadow-md overflow-hidden h-[max-content] shadow-gray-600 "
               >
                 {/* Image */}
                 <div className="relative w-full h-36 sm:h-64 md:h-96">

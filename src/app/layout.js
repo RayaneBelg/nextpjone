@@ -6,7 +6,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
 import PageTransition from "./Components/PageTransition";
-import {GoogleTagManager } from "@next/third-parties/google"
+import {GoogleTagManager , GoogleAnalytics } from "@next/third-parties/google"
 import CookieBanner from "./Components/CookieBanner";
 
 
@@ -28,7 +28,8 @@ export default function RootLayout({ children }) {
         <body
         className="p-0 bg-gradient-body  "
       >
-       <GoogleTagManager gtmId="G-HBWNJFTY9D" />
+      
+       <GoogleAnalytics gaId="G-HBWNJFTY9D"/>
       <Header/>
      
       
