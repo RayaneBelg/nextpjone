@@ -1,5 +1,4 @@
-// src/app/sitemap.js
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
 export async function GET() {
   const baseUrl = "https://www.rosalyon.fr"; // URL de ton site
@@ -28,7 +27,7 @@ export async function GET() {
 
   return new NextResponse(sitemap, {
     headers: {
-      "Content-Type": "text/xml",
+      "Content-Type": "application/xml",
     },
   });
 }
