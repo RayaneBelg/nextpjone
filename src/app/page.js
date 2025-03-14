@@ -13,16 +13,18 @@ import Combos from "./Components/Combos";
 import Lesoffres from "./Components/LesOffres";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Rosa Lyon - Restaurant Halal à Lyon 9 | Burgers & Brasserie",
+  description: "Découvrez Rosa Lyon, votre restaurant halal à Lyon 9. Burgers, fish and chips, belles pièces de viande et desserts maison dans une ambiance conviviale.",
+};
+
+
+
 export default function Home() {
+
   return (
     <div className="min-h-dvh snap-y snap-mandatory overflow-y-scroll h-dvh  ">
-      <Head>
-        <title>Restaurant Halal à Lyon 9 - Cuisine de Brasserie Maison</title>
-        <meta
-          name="description"
-          content="Découvrez notre restaurant halal à Lyon 9 : burgers, fish and chips, belles pièces de viande et desserts maison. Profitez d'un cadre chaleureux et convivial."
-        />
-      </Head>
+    
 
      
         <Lesoffres/>
