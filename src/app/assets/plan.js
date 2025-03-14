@@ -6,7 +6,7 @@ const bonsPlansData = [
     nom: "Formule 1000 trous ",
     description: "Un café accompagné d'un croissant pur beurre, idéal pour bien commencer la journée.",
     prix: 6.0,
-    specialTag: "🏷️ Petit prix",
+    specialTag: "🏷️ Best-seller",
     preparation: "5 min",
     popularite: "☕ Best-seller matin",
     supplements: [

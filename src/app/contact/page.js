@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope , FaChevronDown} from "react-icons/fa";
 import GallerySection from "../Components/GallerySection";
 import Showchef from "../Components/Showchef";
+import Head from "next/head";
 
 export default function Contact() {
 
@@ -12,6 +13,14 @@ export default function Contact() {
 
   return (
     <div className="h-dvh snap-y snap-mandatory overflow-y-auto">
+       <Head>
+        <title>Contact - Restaurant Halal à Lyon 9 | Réservation & Infos</title>
+        <meta
+          name="description"
+          content="Besoin d’une réservation ou d’informations ? Contactez notre restaurant halal à Lyon 9. Profitez d’un accueil chaleureux et d’une cuisine maison de qualité."
+        />
+        
+      </Head>
       {/* Section 1: Contact Details */}
       <div className="flex flex-col justify-center items-center snap-start h-dvh text-black relative ">
         {/* Content Wrapper with Adjusted Height */}

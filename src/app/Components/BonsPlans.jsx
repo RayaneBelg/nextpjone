@@ -76,9 +76,9 @@ export default function BonsPlans() {
         {/* Liste des bons plans */}
         <div
           ref={containerRef}
-          className="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide p-4 items-center "
+          className="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide p-4 items-center sm:justify-center"
         >
-          <AnimatePresence mode="wait">
+          <AnimatePresence >
             {filteredBonsPlans.map((plan) => (
               <motion.div
                 key={plan.id}
@@ -89,7 +89,7 @@ export default function BonsPlans() {
                 className="relative w-[95%] md:w-[50%] lg:w-[25%]  flex-shrink-0 snap-center bg-white rounded-lg shadow-md overflow-hidden h-[max-content] shadow-gray-600 "
               >
                 {/* Image */}
-                <div className="relative w-full h-36 sm:h-64 md:h-96">
+                <div className="relative w-full h-36 lg:h-64 ">
                   <img
                     src={plan.src}
                     alt={plan.nom}
