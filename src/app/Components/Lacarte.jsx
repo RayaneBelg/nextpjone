@@ -42,7 +42,7 @@ export default function Lacarte() {
     filter === "all" ? menu : menu.filter((item) => item.type === filter);
 
   return (
-    <div className="flex flex-col h-dvh overflow-x-hidden">
+    <div className="flex flex-col min-h-dvh overflow-x-hidden">
       {/* Gallery Component */}
       <Gallery activeImages={activeImages} />
 

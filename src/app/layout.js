@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-
+import { Metadata } from "next";
 
 import "./globals.css";
 import Header from "./Components/Header";
@@ -9,7 +9,13 @@ import PageTransition from "./Components/PageTransition";
 import {GoogleTagManager , GoogleAnalytics } from "@next/third-parties/google"
 import CookieBanner from "./Components/CookieBanner";
 
-
+export const metadata = {
+  title: 'Rosa Restaurant',
+  description: 'Rosa Restaurant - Fine Dining Experience',
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 
 const westmeath = localFont({
   src: "../../public/fonts/Westmeath.ttf",

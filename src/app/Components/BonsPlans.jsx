@@ -86,10 +86,10 @@ export default function BonsPlans() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.3 }}
-                className="relative w-[95%] md:w-[50%] lg:w-[25%]  flex-shrink-0 snap-center bg-white rounded-lg shadow-md overflow-hidden h-[max-content] shadow-gray-600 "
+                className="relative w-[85%] sm:w-[70%] md:w-[45%] lg:w-[30%] xl:w-[25%] flex-shrink-0 snap-center bg-white rounded-lg shadow-md overflow-hidden h-[max-content] shadow-gray-600"
               >
                 {/* Image */}
-                <div className="relative w-full h-36 lg:h-64 ">
+                <div className="relative w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-[300px] xl:h-[320px]">
                   <img
                     src={plan.src}
                     alt={plan.nom}
@@ -101,18 +101,18 @@ export default function BonsPlans() {
                 </div>
 
                 {/* Contenu */}
-                <div className="p-4 text-start font-archivo">
-                  <h3 className="text-lg font-bold text-gray-900 font-westmeath">{plan.nom} <span className="text-red-700">{plan.prix} €</span></h3>
-                  <p className="text-gray-600 text-sm mt-1 font-mono">{plan.description}</p>
+                <div className="p-3 sm:p-4 text-start font-archivo">
+                  <h3 className="text-base sm:text-lg font-bold text-gray-900 font-westmeath">{plan.nom} <span className="text-red-700">{plan.prix} €</span></h3>
+                  <p className="text-gray-600 text-xs sm:text-sm mt-1 font-mono line-clamp-2">{plan.description}</p>
                 
 
                   {/* Suppléments */}
                   {plan.supplements && plan.supplements.length > 0 && (
-                    <div className="mt-3 flex flex-wrap justify-start gap-2">
+                    <div className="mt-2 sm:mt-3 flex flex-wrap justify-start gap-1.5 sm:gap-2">
                       {plan.supplements.map((supp, index) => (
                         <span
                           key={index}
-                          className="text-gray-700 text-xs font-semibold flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full shadow-sm"
+                          className="text-gray-700 text-[10px] sm:text-xs font-semibold flex items-center gap-1 bg-gray-100 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full shadow-sm"
                         >
                           {supp.nom === "Œuf" && "🥚"}
                           {supp.nom === "Viande" && "🥩"}
