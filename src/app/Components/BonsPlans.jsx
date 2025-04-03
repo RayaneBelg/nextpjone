@@ -82,9 +82,9 @@ export default function BonsPlans() {
             {filteredBonsPlans.map((plan) => (
               <motion.div
                 key={plan.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0,  }}
+                animate={{ opacity: 1,  }}
+                exit={{ opacity: 0, }}
                 transition={{ duration: 0.3 }}
                 className="relative w-[85%] sm:w-[70%] md:w-[45%] lg:w-[30%] xl:w-[25%] flex-shrink-0 snap-center bg-white rounded-lg shadow-md overflow-hidden h-[max-content] shadow-gray-600"
               >

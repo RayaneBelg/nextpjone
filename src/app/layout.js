@@ -11,10 +11,19 @@ import CookieBanner from "./Components/CookieBanner";
 
 export const metadata = {
   title: 'Rosa Restaurant',
-  description: 'Rosa Restaurant - Fine Dining Experience',
+  
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    apple: [
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    shortcut: [
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
   },
+  manifest: '/manifest.json',
 };
 
 const westmeath = localFont({
